@@ -1,9 +1,11 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 const Login = () => {
   const {signIn,setUser,signInGoogle} =use(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
   const location = useLocation();
   const navigate  = useNavigate();
 
@@ -55,12 +57,21 @@ const handleLogin = (event) => {
               <label className="label text-xl font-semibold text-[#403F3F] mb-3">
                 Password
               </label>
-              <input
-                type="password"
-                name="password"
-                className="input w-full text-[16px] font-normal mb-5 bg-[#F3F3F3]"
-                placeholder="Enter your password"
-              />
+              <div className="relative">
+          <input
+                  type={showPassword ? "text" : "password"}
+                  name='password'
+                  className="input w-full text-[16px] font-normal mb-3 bg-[#F3F3F3]"
+                  placeholder="Enter your password"
+                  required
+                />
+                <span
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute top-3 right-4 cursor-pointer text-[16px]"
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+          </div>
               <button type="submit" className="btn btn-neutral mt-4 mb-2">
                 Login
               </button>

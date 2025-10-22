@@ -2,6 +2,10 @@ import { createBrowserRouter } from "react-router";
 import HomeLayout from "../Layout/HomeLayout";
 import Home from "../Pages/Home/Home";
 import MyProfile from "../Pages/MyProfile/MyProfile";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
+import Loading from "../Components/Loading/Loading";
+import AuthLayout from "../Layout/AuthLayout";
 
 
 
@@ -15,11 +19,28 @@ export const router = createBrowserRouter([
             {    
                 index:true,
                 path:'/',
-                Component:Home
+                Component:Home,
+                loader:() => fetch('/product.json'),
+                hydrateFallbackElement:<Loading></Loading>
             },
             {
                 path:'/my-profile',
                 Component:MyProfile
+            }
+        ]
+    },
+    {
+        path:"/auth",
+        Component:AuthLayout,
+        errorElement:<h1>Error</h1>,
+        children:[
+            {
+                path:'/auth/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/auth/register',
+                Component:Register,
             }
         ]
     }

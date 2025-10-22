@@ -10,6 +10,9 @@ const Navbar = () => {
       <li className= "text-[16px] font-medium">
         <NavLink to='/my-profile'>My Profile</NavLink>
       </li>
+      <li className= "text-[16px] font-medium">
+        <NavLink to='/auth/register'>Register</NavLink>
+      </li>
     </>
   );
   return (
@@ -24,7 +27,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="text-[16px] font-medium border-2 flex items-center gap-1 py-1 px-2 rounded-3xl hover:bg-base-200">Login <span className="text-white bg-blue-600 p-1.5 rounded-2xl"><FaUserAlt /></span> </Link>
+          <Link to='/auth/login' className="text-[16px] font-medium border-2 flex items-center gap-1 py-1 px-2 rounded-3xl hover:bg-base-200">Login <span className="text-white bg-blue-600 p-1.5 rounded-2xl"><FaUserAlt /></span> </Link>
         </div>
       </div>
     </div>

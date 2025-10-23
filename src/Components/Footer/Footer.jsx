@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Footer = () => {
     return (
         <div className='bg-base-300'>
-            <footer className="footer sm:footer-horizontal  text-base-content p-10 w-10/12 mx-auto">
+            <footer className="footer sm:footer-horizontal  text-base-content p-4 lg:p-10 w-full lg:w-10/12 mx-auto">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Products</a>
@@ -63,9 +63,9 @@ const Footer = () => {
     </div>
   </nav>
 </footer>
-<footer className="footer text-base-content border-base-100 border-t px-10 py-4 w-10/12 mx-auto">
-  <aside className="flex items-center justify-between w-full">
-   <Link className=" text-xl font-semibold text-green-600">Sellify - <span className="text-[16px] text-black">A Tech Store Platform</span></Link>
+<footer className="footer text-base-content border-t border-base-100 px-4 mb-10 sm:px-10 py-4 w-full max-w-7xl mx-auto">
+  <aside className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+   <Link className=" text-lg sm:text-xl font-semibold text-green-600">Sellify - <span className="text-sm sm:text-[16px] text-black">A Tech Store Platform</span></Link>
     <p>
       © 2025 Sellify. All rights reserved.
     </p>

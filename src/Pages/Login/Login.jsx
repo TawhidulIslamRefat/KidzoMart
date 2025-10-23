@@ -44,32 +44,33 @@ const handleLogin = (event) => {
 }
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center my-10 lg:my-0 lg:min-h-screen">
       <ToastContainer position="top-right" autoClose={3000} />
-      <div className="card bg-base-100 w-[35%] shrink-0 rounded-[5px] shadow-2xl ">
-        <div className="card-body px-15">
-          <h1 className="text-4xl font-semibold text-center mt-[30px] pb-10 border-b border-base-300 px-5">
+      <title>Sellify - Login</title>
+      <div className="card bg-base-100  w-[95%] max-w-md sm:max-w-lg md:max-w-md lg:w-[35%] shrink-0 rounded-[5px] shadow-2xl ">
+        <div className="card-body px-4 lg:px-15">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mt-2 lg:mt-[30px] pb-3 lg:pb-10 border-b border-base-300 px-5">
             Login your account
           </h1>
           <form onSubmit={handleLogin}>
             <fieldset className="fieldset ">
-              <label className="label text-xl font-semibold text-[#403F3F] mb-3">
+              <label className="label text-lg sm:text-xl font-semibold text-[#403F3F] mb-1 lg:mb-3">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
-                className="input w-full text-[16px] font-normal mb-5 bg-[#F3F3F3]"
+                className="input  w-full text-sm sm:text-base  font-normal mb-2 lg:mb-5 bg-[#F3F3F3]"
                 placeholder="Enter your email address"
               />
-              <label className="label text-xl font-semibold text-[#403F3F] mb-3">
+              <label className="label text-lg sm:text-xl font-semibold text-[#403F3F] mb-1 lg:mb-3">
                 Password
               </label>
               <div className="relative">
           <input
                   type={showPassword ? "text" : "password"}
                   name='password'
-                  className="input w-full text-[16px] font-normal mb-3 bg-[#F3F3F3]"
+                  className="input w-full text-sm sm:text-base p-2 sm:p-3 bg-[#F3F3F3]"
                   placeholder="Enter your password"
                   required
                 />

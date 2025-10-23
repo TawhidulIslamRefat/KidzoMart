@@ -1,12 +1,15 @@
 import React, {  useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
+import { useLocation, useNavigate } from "react-router";
 
 const MyProfile = () => {
   const {user, setUser,updateUser} = useContext(AuthContext);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
   const [editing,setEditing] = useState(false);
+   const location = useLocation();
+  const navigate  = useNavigate();
   
 
 
@@ -18,7 +21,9 @@ const MyProfile = () => {
     })
     .then(() => {
         setUser({...user,displayName:name,photoURL:photoURL});
-        toast.success("Profile update successfully");
+        toast.success('Login Successful!', {
+          onClose: () => navigate(location.state?.from || '/')
+        });
         setEditing(false);
     })
     .catch(error => {
@@ -28,9 +33,10 @@ const MyProfile = () => {
 
   return (
     <div>
-      <div className="min-h-screen flex justify-center items-center bg-base-300">
-        <div className="card w-[30%] bg-white shadow-xl p-8 rounded-2xl">
-          <h1 className="text-3xl font-semibold text-center mb-5 border-b pb-3">
+      <title>Sellify - My Profile</title>
+      <div className="flex justify-center items-center bg-base-300 mt-40">
+        <div className="card bg-white w-[95%] max-w-md sm:max-w-lg lg:w-[30%] shadow-xl p-6 sm:p-8 rounded-2xl">
+          <h1 className="text-2xl sm:text-3xl lg:text-3xl font-semibold text-center mb-4 sm:mb-6 border-b pb-2">
             My Profile
           </h1>
           <div className="flex flex-col items-center mb-5">

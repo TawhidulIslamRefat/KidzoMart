@@ -8,7 +8,8 @@ const MyOrder = () => {
 
   return (
     <div>
-        <div className="w-10/12 mx-auto my-10">
+        <title>Sellify - My-Order</title>
+        <div className="w-[90%] lg:w-10/12 mx-auto my-10">
       <h2 className="text-4xl font-bold text-center mb-10">My Orders</h2>
 
       {order.length === 0 ? (

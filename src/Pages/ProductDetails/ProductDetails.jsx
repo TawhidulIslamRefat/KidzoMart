@@ -16,6 +16,7 @@ const ProductDetails = () => {
     },[data,id])
     return (
         <div className='flex flex-col '>
+            <title>Sellify - Product-Details</title>
             <header>
                 <Navbar></Navbar>
             </header>

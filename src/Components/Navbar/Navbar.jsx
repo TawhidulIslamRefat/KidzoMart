@@ -37,7 +37,7 @@ const Navbar = () => {
   };
   return (
     <div className="bg-base-100 shadow-xl">
-      <div className="navbar w-10/12 mx-auto">
+      <div className="navbar w-full lg:w-10/12 mx-auto">
         <div className="navbar-start">
           <a href="/" className=" text-xl font-semibold text-green-800">
             Sellify -{" "}
@@ -46,9 +46,16 @@ const Navbar = () => {
             </span>
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+       <div>
+         <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 flex">{links}</ul>
         </div>
+         <div className="fixed bottom-0 left-0 w-full z-100 lg:z-0 bg-base-100 border-t border-gray-300 lg:hidden">
+        <ul className=" flex justify-center items-center gap-8 py-3">
+      {links}
+    </ul>
+  </div>
+       </div>
         <div className="navbar-end flex items-center gap-3 ">
           <div className="w-12 h-12 rounded-full border-2 border-green-300 cursor-pointer  ">
             {user && user.photoURL ? (

@@ -5,6 +5,7 @@ const MyProfile = () => {
   const {user, setUser,updateUser} = useContext(AuthContext);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
+  const [editing,setEditing] = useState(false);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
 
@@ -21,6 +22,7 @@ const MyProfile = () => {
     .then(() => {
         setUser({...user,displayName:name,photoURL:photoURL});
         setSuccess("Profile update successfully");
+        setEditing(false);
     })
     .catch(error => {
         setError(error.message);
@@ -46,8 +48,8 @@ const MyProfile = () => {
             <h3 className="text-xl font-semibold">{user?.displayName}</h3>
             <p className="text-gray-500">{user?.email}</p>
           </div>
-
-          <form onSubmit={handleUpdate}>
+          { editing ?(
+          <form  onSubmit={handleUpdate}>
             <div className="form-control mb-4">
               <label className="label text-lg font-medium">Name</label>
               <input
@@ -70,11 +72,19 @@ const MyProfile = () => {
                 placeholder="Enter new photo URL"
               />
             </div>
-            
-          <button type="submit" className="btn btn-neutral w-full">
-            Update Profile
-          </button>
-          </form>
+                 <div className="flex gap-2">
+              <button type="submit"
+              className="btn btn-success w-full">
+                Update Profile
+              </button>
+            </div>
+            </form>
+                   )  : ( <button type="button"
+              onClick={() => setEditing(true)}
+              className="btn btn-primary w-full">
+            Edit Profile
+            </button> )
+            }
            {success && (
           <p className="text-green-600 text-center mt-3 font-medium">
             {success}

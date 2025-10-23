@@ -12,12 +12,16 @@ const Navbar = () => {
       <li className="text-[16px] font-medium">
         <NavLink to="/my-profile">My Profile</NavLink>
       </li>
-      <li className="text-[16px] font-medium">
+
+      {
+        user ? <li className="text-[16px] font-medium">
         <NavLink to="/my-order">My Order</NavLink>
-      </li>
-      <li className="text-[16px] font-medium">
+      </li> : <li className="text-[16px] font-medium">
         <NavLink to="/auth/register">Register</NavLink>
       </li>
+      }
+      
+      
     </>
   );
 
@@ -34,12 +38,12 @@ const Navbar = () => {
     <div className="bg-base-100 shadow-xl">
       <div className="navbar w-10/12 mx-auto">
         <div className="navbar-start">
-          <Link className=" text-xl font-semibold text-green-800">
+          <a href="/" className=" text-xl font-semibold text-green-800">
             Sellify -{" "}
             <span className="text-[16px] text-black">
               A Tech Store Platform
             </span>
-          </Link>
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>

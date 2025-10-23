@@ -7,7 +7,8 @@ const MyOrder = () => {
     const {order} = use(OrderContext);
 
   return (
-    <div className="w-10/12 mx-auto my-10">
+    <div>
+        <div className="w-10/12 mx-auto my-10">
       <h2 className="text-4xl font-bold text-center mb-10">My Orders</h2>
 
       {order.length === 0 ? (
@@ -19,7 +20,7 @@ const MyOrder = () => {
           {order.map((product, index) => (
             <div key={index} className="card bg-base-100 shadow-lg rounded-xl">
               <figure className="px-5 pt-5">
-                <img src={product.pictureURL} alt={product.productName} className="rounded-xl w-full h-48 object-cover" />
+                <img src={product.pictureURL} alt={product.productName} className="rounded-xl w-full h-78 " />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title text-xl font-semibold">{product.productName}</h2>
@@ -34,6 +35,28 @@ const MyOrder = () => {
           ))}
         </div>
       )}
+    </div>
+      <div className="w-10/12 mx-auto my-10">
+      <h2 className="text-4xl font-bold text-center text-green-500 mb-10">Notifications</h2> 
+        <ul className="space-y-4  border-yellow-500 bg-yellow-50 ">
+            <li className='p-4 rounded-lg shadow-md border-l-4'>
+              <p className="font-medium">Your order ORD-1001 has been Processing!</p>
+              <p className="text-gray-500 text-sm">2025-10-10</p>
+            </li>
+        </ul>
+        <ul className="space-y-4 my-4 border-yellow-500 bg-yellow-50 ">
+            <li className='p-4 rounded-lg shadow-md border-l-4'>
+              <p className="font-medium">Your order ORD-1010 has been Processing!</p>
+              <p className="text-gray-500 text-sm">2025-10-20</p>
+            </li>
+        </ul>
+        <ul className="space-y-4  border-blue-500 bg-blue-50 ">
+            <li className='p-4 rounded-lg shadow-md border-l-4'>
+              <p className="font-medium">New discount on Wireless Headphones - 10% OFF!</p>
+              <p className="text-gray-500 text-sm">2025-10-10</p>
+            </li>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -13,14 +13,14 @@ const ProductCard = ({ product }) => {
 
   return (
     <div>
-      <div className="card shadow-sm h-full flex flex-col">
+      <div className="card shadow-sm h-full flex flex-col transition-transform duration-500 hover:scale-102 hover:bg-green-100" data-aos="fade-down-left" data-aos-duration="1000">
         <figure className="p-5">
-          <img className="w-30 h-20 lg:w-80 lg:h-80 bg-[#D9D9D9] rounded-xl"
+          <img className="w-30 h-30 lg:w-80 lg:h-80 bg-[#D9D9D9] rounded-xl"
             src={pictureURL}
             alt="Product"
           />
         </figure>
-        <div className=" p-2 flex flex-col flex-grow justify-between">
+        <div className=" p-3 md:p-5 flex flex-col flex-grow justify-between">
           <h2 className="text-[13px] lg:text-2xl font-normal lg:font-semibold ">{productName}</h2>
           <div className="flex justify-between items-center gap-2 lg:gap-25 my-3">
             <p className="flex items-center text-[10px] lg:text-[18px] font-medium gap-1 bg-orange-200 rounded-xl p-1">

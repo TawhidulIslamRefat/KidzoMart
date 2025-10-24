@@ -25,7 +25,7 @@ const ProductDetailsCard = ({ product }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addOrder(product)
-    toast.success("Your Order Request is Successfully Progress")
+    toast.success("Your Request is Successfully Progress")
     e.target.reset();
   };
 
@@ -67,7 +67,7 @@ const ProductDetailsCard = ({ product }) => {
           </div>
         </div>
         <div className="mt-4 p-4 bg-gray-100 rounded-lg">
-          <h2 className="text-xl font-semibold mb-3">Order Now</h2>
+          <h2 className="text-xl font-semibold mb-3">Try Now</h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
             <input
               type="text"
@@ -84,7 +84,7 @@ const ProductDetailsCard = ({ product }) => {
               required
             />
             <button type="submit" className="btn btn-primary mt-2">
-              Order Now
+              Try Now
             </button>
           </form>
         </div>

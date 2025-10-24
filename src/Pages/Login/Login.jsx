@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
   const {signIn,setUser,signInGoogle} =use(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
   const location = useLocation();
   const navigate  = useNavigate();
 
@@ -47,7 +48,7 @@ const handleLogin = (event) => {
     <div className="flex justify-center items-center min-h-screen lg:my-0 lg:min-h-screen">
       <ToastContainer position="top-right" autoClose={3000} />
       <title>Sellify - Login</title>
-      <div className="card bg-base-100  w-[95%] max-w-md sm:max-w-lg md:max-w-md lg:w-[35%] shrink-0 rounded-[5px] shadow-2xl ">
+      <div className="card bg-base-100  w-[95%]   md:w-[35%] shrink-0 rounded-[5px] shadow-2xl ">
         <div className="card-body px-4 lg:px-15">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mt-2 lg:mt-[30px] pb-3 lg:pb-10 border-b border-base-300 px-5">
             Login your account
@@ -60,6 +61,8 @@ const handleLogin = (event) => {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="input  w-full text-sm sm:text-base  font-normal mb-2 lg:mb-5 bg-[#F3F3F3]"
                 placeholder="Enter your email address"
               />
@@ -81,7 +84,9 @@ const handleLogin = (event) => {
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
           </div>
-           <div><Link to='/auth/forget-password' className="link link-hover">Forgot password?</Link></div>
+           <div><Link to='/auth/forget-password'
+           state={{ email: email }}
+           className="link link-hover">Forgot password?</Link></div>
               <button type="submit" className="btn btn-neutral mt-4 mb-2">
                 Login
               </button>
@@ -121,7 +126,7 @@ const handleLogin = (event) => {
                 Login with Google
               </button>
           <p className="text-[16px] font-semibold text-[#706F6F] text-center">
-            Dont’t Have An Account ?{" "}
+            Dont’t Have An Account ? 
             <Link
               className="text-[#F75B5F] hover:underline"
               to="/auth/register"

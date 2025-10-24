@@ -77,7 +77,7 @@ const password = event.target.password.value;
           <ToastContainer></ToastContainer>
           <title>Sellify - Register</title>
              <div className='flex justify-center  items-center min-h-screen '>
-             <div className="card bg-base-100 w-[95%] max-w-md sm:max-w-lg md:w-full lg:w-[35%] shrink-0 rounded-[5px]  shadow-2xl">
+             <div className="card bg-base-100 w-[95%]  md:w-[35%] shrink-0 rounded-[5px]  shadow-2xl">
       <div className="card-body px-4 lg:px-15">
         <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-center mt-2 lg:mt-[30px] pb-3 lg:pb-10border-b border-base-300'>Register your account</h1>
        <form onSubmit={handleRegister}>

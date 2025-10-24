@@ -1,0 +1,47 @@
+[
+  {
+    "productId": 3,
+    "productName": "Barbie Dreamhouse",
+    "price": 129.99,
+    "rating": 4.8,
+    "sellerName": "Fashion Toys Co.",
+    "subCategory": "Dolls",
+    "pictureURL": "https://i.pinimg.com/originals/e0/3a/1f/e03a1f1c1d37f83db78bcb4ee9b31b99.png"
+  },
+  {
+    "productId": 11,
+    "productName": "Stuffed Teddy Bear",
+    "price": 22.99,
+    "rating": 4.8,
+    "sellerName": "Cuddly Toys",
+    "subCategory": "Stuffed Animals",
+    "pictureURL": "https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-cute-bear-teddy-toy-png-image_10149481.png"
+  },
+  {
+    "productId": 1,
+    "productName": "Lego Classic Bricks",
+    "price": 49.99,
+    "rating": 4.7,
+    "sellerName": "Toys R Us Local",
+    "subCategory": "Building Blocks",
+    "pictureURL": "https://www.lego.com/cdn/cs/set/assets/bltbcfcf384c7e75fd6/10713_Prod.png?fit=crop&quality=80&width=400&height=400&dpr=1"
+  },
+  {
+    "productId": 7,
+    "productName": "Rubik's Cube",
+    "price": 14.99,
+    "rating": 4.7,
+    "sellerName": "Puzzle World",
+    "subCategory": "Puzzles",
+    "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/3/30/Rubik_cube.png"
+  },
+  {
+    "productId": 12,
+    "productName": "LEGO Technic Racer",
+    "price": 89.99,
+    "rating": 4.7,
+    "sellerName": "Toys R Us Local",
+    "subCategory": "Building Blocks",
+    "pictureURL": "https://atlas-content-cdn.pixelsquid.com/stock-images/lego-race-car-vehicle-ZeYQMrD-600.jpg"
+  }
+]

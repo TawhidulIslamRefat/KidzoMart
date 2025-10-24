@@ -36,24 +36,20 @@ const Navbar = () => {
       });
   };
   return (
-    <div className="bg-base-100 shadow-xl" data-aos="fade">
-      <div className="navbar w-full lg:w-10/12 mx-auto">
+    <div className="mb-15">
+      <div className="bg-base-100 shadow-xl sticky md:fixed top-0 left-0 w-full z-50 h-16">
+        <div className="navbar w-full lg:w-10/12 mx-auto h-full">
         <div className="navbar-start">
           <a href="/" className="text-[13px]  md:text-xl font-semibold text-green-800">
-            Sellify -   
+            ToyTopia – 
             <span className="text-[10px] sm:text-[16px] text-black">
-              A Tech Store Platform
+              A Kids Toy Store Platform
             </span>
           </a>
         </div>
          <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 flex items-center gap-6">{links}</ul>
         </div>
-         <div className="fixed bottom-0 left-0 w-full z-100 md:z-0 bg-base-100 border-t border-gray-300 md:hidden">
-        <ul className=" flex justify-center items-center gap-8 py-3">
-      {links}
-    </ul>
-  </div>
         <div className="navbar-end flex items-center gap-3 ">
           <div className="w-8 sm:w-12 h-8 sm:h-12 rounded-full cursor-pointer  ">
             {user && user.photoURL ? (
@@ -97,9 +93,16 @@ const Navbar = () => {
                 <span className="relative">Login</span>
               </Link>
             )}
+           
           </div>
         </div>
       </div>
+      </div>
+        <div className="fixed bottom-0 left-0 w-full z-100 md:z-0 bg-base-100 border-t border-gray-300 md:hidden">
+        <ul className=" flex justify-center items-center gap-8 py-3">
+      {links}
+    </ul>
+  </div>
     </div>
   );
 };

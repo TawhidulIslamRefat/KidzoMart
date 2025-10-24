@@ -3,8 +3,8 @@ import React from 'react';
 import { useLoaderData } from 'react-router';
 import HomeSlider from '../../Components/HomeSlider/HomeSlider';
 import BestBrand from '../../Components/BestBrand/BestBrand';
-import TopSell from '../../Components/TopSell/TopSell';
 import ProductCard from '../../Components/ProductCard/ProductCard';
+import TopRating from '../../Components/TopRating/TopRating';
 
 const Home = () => {
         const productData = useLoaderData();
@@ -18,7 +18,7 @@ const Home = () => {
                 <BestBrand></BestBrand>
             </section>
             <section className='w-11/12 mx-auto mt-10 mb-10'>
-              <TopSell></TopSell>
+              <TopRating></TopRating>
             </section>
             <section className='w-[95%] lg:w-10/12 mx-auto my-30'>
                 <h1 className='text-3xl font-semibold text-center'>Popular Tech Products</h1>

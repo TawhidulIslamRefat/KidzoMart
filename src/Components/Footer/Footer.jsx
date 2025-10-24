@@ -64,7 +64,7 @@ const Footer = () => {
   </nav>
 </footer>
 <footer className="footer text-base-content border-t border-base-100 px-4 mb-10 sm:px-10 py-4 w-full max-w-7xl mx-auto">
-  <aside className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+  <aside className="flex flex-col sm:flex-row items-center justify-between gap-2 md:gap-50 lg:gap-100">
    <Link className=" text-lg sm:text-xl font-semibold text-green-600">Sellify - <span className="text-sm sm:text-[16px] text-black">A Tech Store Platform</span></Link>
     <p>
       © 2025 Sellify. All rights reserved.

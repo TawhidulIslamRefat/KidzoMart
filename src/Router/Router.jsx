@@ -23,7 +23,6 @@ export const router = createBrowserRouter([
         path: "/",
         Component: Home,
         loader: () => fetch("/product.json"),
-        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "/my-profile",
@@ -68,7 +67,6 @@ export const router = createBrowserRouter([
       </PrivetRoute>
     ),
     loader: () => fetch("/product.json"),
-    hydrateFallbackElement: <Loading></Loading>,
   },
   {
     path: "/*",

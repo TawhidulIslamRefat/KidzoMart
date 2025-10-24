@@ -21,16 +21,16 @@ const MyOrder = () => {
           {order.map((product, index) => (
             <div key={index} className="card bg-base-100 shadow-lg rounded-xl">
               <figure className="px-5 pt-5">
-                <img src={product.pictureURL} alt={product.productName} className="rounded-xl w-full h-78 " />
+                <img src={product.pictureURL} alt={product.productName} className="rounded-xl w-full h-50 md:h-78 " />
               </figure>
               <div className="card-body items-center text-center">
-                <h2 className="card-title text-xl font-semibold">{product.productName}</h2>
-                <p className="text-gray-500">Category: {product.subCategory}</p>
-                <p className="flex items-center gap-1 bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">
+                <h2 className="card-title text-[16px] md:text-xl font-semibold">{product.productName}</h2>
+                <p className="text-gray-500 text-[14px]">Category: {product.subCategory}</p>
+                <p className="flex items-center gap-1 bg-orange-100 text-orange-600 px-1.5 py-0.5 md:px-3 md:py-1 rounded-lg">
                   <FaStar /> {product.rating}
                 </p>
-                <p className="text-xl font-semibold mt-2">Price: ${product.price}</p>
-                <p className=" font-semibold mt-2 text-yellow-300">Status Processing</p>
+                <p className="text-[16px] md:text-xl font-semibold mt-1 md:mt-2">Price: ${product.price}</p>
+                <p className=" text-[14px] md:text-[16px] font-semibold mt-1 md:mt-2 text-yellow-300">Status Processing</p>
               </div>
             </div>
           ))}

@@ -8,7 +8,6 @@ const ProductDetails = () => {
    const {id} = useParams();
    const data = useLoaderData();
    const [product,setProduct] = useState({});
-   console.log(id,data);
    
   useEffect(()=> {
         const productDetails = data.find(p => String(p.productId) === id);

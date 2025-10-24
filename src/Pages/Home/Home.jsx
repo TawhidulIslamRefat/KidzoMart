@@ -22,7 +22,7 @@ const Home = () => {
             </section>
             <section className='w-[95%] lg:w-10/12 mx-auto my-30'>
                 <h1 className='text-3xl font-semibold text-center'>Popular Tech Products</h1>
-                <div className='grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 mt-10'>
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 mt-10'>
                     {
                     productData.map((product)=> <ProductCard key={product.productId} product={product}></ProductCard>)
                 }

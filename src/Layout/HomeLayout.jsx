@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation } from 'react-router';
 import { ToastContainer } from 'react-toastify';
-
+import {PulseLoader } from "react-spinners";
 const HomeLayout = () => {
-    return (
-        <div className='bg-[#F6F6F4] flex flex-col'>
+   
+     const [showLoader,setShowLoader] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setShowLoader(true);
+    const timeOut = setTimeout(()=>{
+      setShowLoader(false);
+    },1000);
+    return () => clearTimeout(timeOut);
+  },[location.pathname]);
+
+    return  showLoader ? (<div className="flex justify-center items-center min-h-screen gap-15 sm:gap-25 ">
+                <PulseLoader color="#9f62f2" size={40} />
+              </div>) : (<div className='bg-[#F6F6F4] flex flex-col'>
             <ToastContainer position="top-right" autoClose={3000} />
             <header>
                 <nav>
@@ -14,13 +26,13 @@ const HomeLayout = () => {
                 </nav>
             </header>
             <main className='flex-1 min-h-screen'>
-                 <Outlet></Outlet>
+             <Outlet></Outlet>
             </main>
             <footer>
               <Footer></Footer>
             </footer>
-        </div>
-    );
+        </div>);
 };
+        
 
 export default HomeLayout;

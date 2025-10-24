@@ -36,28 +36,26 @@ const Navbar = () => {
       });
   };
   return (
-    <div className="bg-base-100 shadow-xl">
+    <div className="bg-base-100 shadow-xl" data-aos="fade">
       <div className="navbar w-full lg:w-10/12 mx-auto">
         <div className="navbar-start">
-          <a href="/" className=" text-xl font-semibold text-green-800">
-            Sellify -{" "}
-            <span className="text-[16px] text-black">
+          <a href="/" className="text-[13px]  md:text-xl font-semibold text-green-800">
+            Sellify -   
+            <span className="text-[10px] sm:text-[16px] text-black">
               A Tech Store Platform
             </span>
           </a>
         </div>
-       <div>
-         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 flex">{links}</ul>
+         <div className="navbar-center hidden md:flex">
+          <ul className="menu menu-horizontal px-1 flex items-center gap-6">{links}</ul>
         </div>
-         <div className="fixed bottom-0 left-0 w-full z-100 lg:z-0 bg-base-100 border-t border-gray-300 lg:hidden">
+         <div className="fixed bottom-0 left-0 w-full z-100 md:z-0 bg-base-100 border-t border-gray-300 md:hidden">
         <ul className=" flex justify-center items-center gap-8 py-3">
       {links}
     </ul>
   </div>
-       </div>
         <div className="navbar-end flex items-center gap-3 ">
-          <div className="w-12 h-12 rounded-full border-2 border-green-300 cursor-pointer  ">
+          <div className="w-8 sm:w-12 h-8 sm:h-12 rounded-full cursor-pointer  ">
             {user && user.photoURL ? (
               <div
                 className="tooltip tooltip-left"
@@ -67,15 +65,14 @@ const Navbar = () => {
                   <img
                     src={user.photoURL}
                     alt="User"
-                    className="w-12 h-12 rounded-full border-2 border-green-300 cursor-pointer"
+                    className="w-8 sm:w-12 h-8 sm:h-12 rounded-full border-2 border-green-300 cursor-pointer"
                   />
                 </Link>
               </div>
             ) : (
-              <div className="tooltip tooltip-right" data-tip="No User">
+              <div className="w-8 sm:w-12 h-8 sm:h-12">
                 <FaUserAlt
-                  size={24}
-                  className="w-12 h-12 rounded-full border-2 border-green-300"
+                  className="w-7 sm:w-12 h-7  sm:h-12 "
                 />
               </div>
             )}
@@ -86,7 +83,7 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={handleLogOut}
-                className="relative inline-flex items-center justify-center px-6 py-3 font-semibold text-white overflow-hidden bg-green-600 rounded-lg group"
+                className="relative inline-flex items-center justify-center md:px-6 px-4  md:py-3 py-1.5  font-semibold text-white overflow-hidden bg-green-600 rounded-lg group"
               >
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-green-800 rounded-full group-hover:w-56 group-hover:h-56"></span>
                 <span className="relative">Logout</span>
@@ -94,7 +91,7 @@ const Navbar = () => {
             ) : (
               <Link
                 to="/auth/login"
-                className="relative inline-flex items-center justify-center px-6 py-3 font-semibold text-white overflow-hidden bg-green-600 rounded-lg group"
+                className="relative inline-flex items-center justify-center md:px-6 px-4  md:py-3 py-1.5 font-semibold text-white overflow-hidden bg-green-600 rounded-lg group"
               >
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-green-800 rounded-full group-hover:w-56 group-hover:h-56"></span>
                 <span className="relative">Login</span>

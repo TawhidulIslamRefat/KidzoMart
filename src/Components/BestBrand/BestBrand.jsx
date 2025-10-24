@@ -12,10 +12,11 @@ const BestBrand = () => {
     return (
           <div className='my-10'>
   <h1 className='text-3xl font-bold text-center'>Popular Brands</h1>
-   <div className='grid grid-cols-3 gap-4'>
+   <div className='grid grid-cols-3 md:grid-cols-5 gap-4'>
+
     <div className="card bg-base-300 shadow-sm py-6 lg:py-5 mt-8" data-aos="fade-up">
   <figure>
-    <img className='w-10 sm:25'
+    <img className='w-10 md:w-15 lg:w-25'
       src={image1}
       alt="Apple Logo" />
   </figure>
@@ -23,9 +24,10 @@ const BestBrand = () => {
     <h2 className=" text-center text-[10px] sm:text-xl font-medium">Apple</h2>
   </div>
    </div>
-   <div className="card bg-base-300 shadow-sm py-5 mt-8" >
+
+   <div className="card bg-base-300 shadow-sm py-5 mt-8" data-aos="fade-down" >
   <figure>
-    <img className='w-20 sm:w-50'
+    <img className='w-20 md:w-26 lg:w-50'
       src={image6}
       alt="Apple Logo" />
   </figure>
@@ -35,9 +37,11 @@ const BestBrand = () => {
     </div>
   </div>
    </div>
-   <div className="card bg-base-300 shadow-sm py-5 mt-8">
+
+   <div className="card bg-base-300 shadow-sm py-5 mt-8" data-aos="fade-left"
+>
   <figure>
-    <img className='w-20 sm:w-50'
+    <img className='w-20 md:w-26 lg:w-50'
       src={image2}
       alt="Apple Logo" />
   </figure>
@@ -47,21 +51,23 @@ const BestBrand = () => {
     </div>
   </div>
    </div>
-   <div className="card bg-base-300 shadow-sm py-5 mt-8">
+
+   <div className="card bg-base-300 shadow-sm py-5 mt-8" data-aos="fade-right">
   <figure>
-    <img className='w-10 sm:w-25'
+    <img className='w-10 md:w-15 lg:w-25'
       src={image3}
       alt="Apple Logo" />
   </figure>
   <div className="card-body">
-    <h2 className=" text-center text-[10px] sm:text-xlfont-medium">DELL</h2>
+    <h2 className=" text-center text-[10px] sm:text-xl font-medium">DELL</h2>
     <div className="card-actions justify-end">
     </div>
   </div>
    </div>
-   <div className="card bg-base-300 shadow-sm py-5 mt-8">
+
+   <div className="card bg-base-300 shadow-sm py-5 mt-8" data-aos="fade-up-right">
   <figure>
-    <img className='w-15 sm:w-40'
+    <img className='w-15 md:w-25 lg:w-40'
       src={image4}
       alt="Apple Logo" />
   </figure>

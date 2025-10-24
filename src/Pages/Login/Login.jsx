@@ -44,7 +44,7 @@ const handleLogin = (event) => {
 }
 
   return (
-    <div className="flex justify-center items-center my-10 lg:my-0 lg:min-h-screen">
+    <div className="flex justify-center items-center min-h-screen lg:my-0 lg:min-h-screen">
       <ToastContainer position="top-right" autoClose={3000} />
       <title>Sellify - Login</title>
       <div className="card bg-base-100  w-[95%] max-w-md sm:max-w-lg md:max-w-md lg:w-[35%] shrink-0 rounded-[5px] shadow-2xl ">

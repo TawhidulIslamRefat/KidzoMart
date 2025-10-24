@@ -1,16 +1,24 @@
-# React + Vite
+# Sellify - A Tech Store Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
+Sellify is an e-commerce web application for tech products. Users can register, login, view product listings, check product details, and manage their profile. The app is responsive and works well on both mobile and desktop devices.
 
-Currently, two official plugins are available:
+## Live URL
+[https://sellify-app.netlify.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- User registration and login using email/password and Google OAuth  
+- User profile with editable name and profile picture  
+- Product listing with details including price, rating, and availability  
+- Responsive layout for mobile and desktop  
+- Navbar and footer with adaptive design  
+- Toast notifications for login, logout, registration, and profile updates  
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## NPM Packages Used
+- **react** - Frontend library for building UI  
+- **react-router** - Client-side routing  
+- **firebase** - Authentication and backend services  
+- **react-toastify** - Toast notifications  
+- **react-icons** - Icons library (Font Awesome)  
+- **tailwindcss** - Utility-first CSS framework  
+- **daisyui** - Tailwind CSS component library  

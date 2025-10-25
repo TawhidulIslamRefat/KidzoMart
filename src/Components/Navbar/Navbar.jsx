@@ -11,20 +11,20 @@ const Navbar = () => {
   const { user, logOut } = use(AuthContext);
   const links = (
     <>
-      <li className="text-[15px] md:text-[16px] font-medium">
+      <li className="text-[18px] md:text-[16px] font-medium">
         <NavLink to="/" className='flex items-center'> <span  className="flex md:hidden"><IoMdHome /></span> <span className="hidden md:flex">Home</span></NavLink>
       </li>
-      <li className="text-[14px] md:text-[16px] font-medium">
+      <li className="text-[18px] md:text-[16px] font-medium">
         <NavLink to="/my-profile"> <span  className="flex md:hidden"><FaUserCircle /></span> <span className="hidden md:flex">My Profile</span></NavLink>
       </li>
 
       {user && (
-        <li className="text-[15px] md:text-[16px] font-medium">
+        <li className="text-[17px] md:text-[16px] font-medium">
           <NavLink to="/my-order"> <span  className="flex md:hidden"><FaShoppingCart /> </span> <span className="hidden md:flex">My Order</span></NavLink>
         </li>
       )}
       {user && (
-        <li className="text-[15px] md:text-[16px] font-medium">
+        <li className="text-[18px] md:text-[16px] font-medium">
           <NavLink to="/notification">  <span  className="flex md:hidden"><IoNotificationsSharp /></span> <span className="hidden md:flex">Notification</span></NavLink>
         </li>
       )}

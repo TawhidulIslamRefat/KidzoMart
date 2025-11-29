@@ -1,8 +1,8 @@
-# ToyTopia – A Kids Toy Store Platform
+# kidzoMart – A Kids Toy Store Platform
 
 ## Project Name
 
-**ToyTopia** – A modern e-commerce platform for kids’ toys, focusing on top-rated and best-selling products.
+**kidzoMart** – A modern e-commerce platform for kids’ toys, focusing on top-rated and best-selling products.
 
 ## Purpose
 

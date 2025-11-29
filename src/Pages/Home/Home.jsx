@@ -11,7 +11,7 @@ const Home = () => {
   const productData = useLoaderData();
   return (
     <div>
-      <title>ToyTopia - Home</title>
+      <title>kidzoMart - Home</title>
       <section className="w-[98%] lg:w-10/12 mx-auto mt-10">
         <HomeSlider product={productData}></HomeSlider>
       </section>
@@ -21,7 +21,10 @@ const Home = () => {
       <section className="w-11/12 mx-auto mt-10 mb-10">
         <TopRating></TopRating>
       </section>
-      <section id="top-product" className="w-[95%] lg:w-10/12 mx-auto my-10 md:my-30">
+      <section
+        id="top-product"
+        className="w-[95%] lg:w-10/12 mx-auto my-10 md:my-30"
+      >
         <h1 className=" text-xl md:text-3xl font-semibold text-center">
           Popular Tech Products
         </h1>

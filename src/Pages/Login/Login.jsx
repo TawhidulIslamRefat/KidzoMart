@@ -46,7 +46,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen lg:my-0 lg:min-h-screen">
       <ToastContainer position="top-right" autoClose={3000} />
-      <title>ToyTopia - Login</title>
+      <title>kidzoMart - Login</title>
       <div className="card bg-base-100  w-[95%]   md:w-[60%] lg:w-[35%] shrink-0 rounded-[5px] shadow-2xl ">
         <div className="card-body px-4 lg:px-15">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mt-2 lg:mt-[30px] pb-3 lg:pb-10 border-b border-base-300 px-5">

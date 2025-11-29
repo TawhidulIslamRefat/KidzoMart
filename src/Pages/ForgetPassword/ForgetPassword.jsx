@@ -29,7 +29,7 @@ const ForgetPassword = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <title>ToyTopia - Forget Password</title>
+      <title>kidzoMart - Forget Password</title>
       <ToastContainer />
       <div className="card bg-base-100 w-[95%]   md:w-[60%] lg:w-[35%] rounded-[5px] shadow-2xl ">
         <div className="card-body px-15 flex-1">

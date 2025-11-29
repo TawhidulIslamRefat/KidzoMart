@@ -12,7 +12,7 @@ const Footer = () => {
           <a className="link link-hover">Update Profile</a>
         </nav>
         <nav>
-          <h6 className="footer-title">ToyTopia</h6>
+          <h6 className="footer-title">kidzoMart</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact us</a>
           <a className="link link-hover">My Account</a>
@@ -65,7 +65,7 @@ const Footer = () => {
       <footer className="footer text-base-content border-t border-base-100 px-4 pb-10 md:pb-5 sm:px-10 pt-4 w-full max-w-7xl mx-auto">
         <aside className="flex flex-col mx-auto sm:flex-row items-center justify-between gap-2 md:gap-50 lg:gap-100">
           <Link className=" text-sm sm:text-xl font-semibold text-[#F52549]">
-            KidzoMart – 
+            KidzoMart –
             <span className="text-sm sm:text-[16px] text-black">
               A Kids Toy Store Platform
             </span>

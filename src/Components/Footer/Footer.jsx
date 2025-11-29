@@ -62,15 +62,15 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-      <footer className="footer text-base-content border-t border-base-100 px-4 pb-15 md:pb-5 sm:px-10 pt-4 w-full max-w-7xl mx-auto">
-        <aside className="flex flex-col sm:flex-row items-center justify-between gap-2 md:gap-50 lg:gap-100">
-          <Link className=" text-lg sm:text-xl font-semibold text-[#F52549]">
-            ToyTopia –
+      <footer className="footer text-base-content border-t border-base-100 px-4 pb-10 md:pb-5 sm:px-10 pt-4 w-full max-w-7xl mx-auto">
+        <aside className="flex flex-col mx-auto sm:flex-row items-center justify-between gap-2 md:gap-50 lg:gap-100">
+          <Link className=" text-sm sm:text-xl font-semibold text-[#F52549]">
+            KidzoMart – 
             <span className="text-sm sm:text-[16px] text-black">
               A Kids Toy Store Platform
             </span>
           </Link>
-          <p>© 2025 ToyTopia. All rights reserved.</p>
+          <p>© 2025 KidzoMart. All rights reserved.</p>
         </aside>
       </footer>
     </div>

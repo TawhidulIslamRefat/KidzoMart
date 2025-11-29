@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
   return (
     <div>
       <div
-        className="card shadow-sm h-full flex flex-col transition-transform duration-500 hover:scale-102 hover:bg-red-100"
+        className="card shadow-sm h-full flex flex-col transition-transform duration-2000 hover:duration-300  hover:bg-red-100"
         data-aos="fade-up"
         data-aos-duration="7000"
       >

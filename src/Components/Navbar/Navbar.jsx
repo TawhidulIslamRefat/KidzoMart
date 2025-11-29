@@ -49,7 +49,7 @@ const Navbar = () => {
               href="/"
               className="text-[14px]  md:text-xl font-semibold text-[#F52549] flex items-center gap-2"
             >
-              ToyTopia 
+              KidzoMart 
               <span className="text-[10px] sm:text-[16px] text-black hidden lg:block">
                 - A Kids Toy Store Platform
               </span>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end flex items-center gap-3 ">
             <div className="w-8 sm:w-12 h-8 sm:h-12 rounded-full cursor-pointer  ">
-              {user && user.photoURL ? (
+              {user &&(
                 <div
                   className="tooltip tooltip-left"
                   data-tip={user?.displayName}
@@ -74,10 +74,6 @@ const Navbar = () => {
                       className="w-8 sm:w-12 h-8 sm:h-12 rounded-full border-2 border-red-400 cursor-pointer"
                     />
                   </Link>
-                </div>
-              ) : (
-                <div className="w-8 sm:w-12 h-8 sm:h-12">
-                  <FaUserAlt className="w-7 sm:w-12 h-7  sm:h-12 " />
                 </div>
               )}
             </div>

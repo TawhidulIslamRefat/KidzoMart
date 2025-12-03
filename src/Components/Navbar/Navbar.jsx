@@ -12,20 +12,53 @@ const Navbar = () => {
   const links = (
     <>
       <li className="text-[18px] md:text-[16px] font-medium">
-        <NavLink to="/" className='flex items-center'> <span  className="flex md:hidden"><IoMdHome /></span> <span className="hidden md:flex">Home</span></NavLink>
+        <NavLink to="/" className="flex items-center">
+          {" "}
+          <span className="flex md:hidden">
+            <IoMdHome />
+          </span>{" "}
+          <span className="hidden md:flex">Home</span>
+        </NavLink>
       </li>
       <li className="text-[18px] md:text-[16px] font-medium">
-        <NavLink to="/my-profile"> <span  className="flex md:hidden"><FaUserCircle /></span> <span className="hidden md:flex">My Profile</span></NavLink>
+        <NavLink to="/all-items">
+          {" "}
+          <span className="flex md:hidden">
+            <FaUserCircle />
+          </span>{" "}
+          <span className="hidden md:flex">All Toys</span>
+        </NavLink>
+      </li>
+      <li className="text-[18px] md:text-[16px] font-medium">
+        <NavLink to="/my-profile">
+          {" "}
+          <span className="flex md:hidden">
+            <FaUserCircle />
+          </span>{" "}
+          <span className="hidden md:flex">My Profile</span>
+        </NavLink>
       </li>
 
       {user && (
         <li className="text-[17px] md:text-[16px] font-medium">
-          <NavLink to="/my-order"> <span  className="flex md:hidden"><FaShoppingCart /> </span> <span className="hidden md:flex">My Order</span></NavLink>
+          <NavLink to="/my-order">
+            {" "}
+            <span className="flex md:hidden">
+              <FaShoppingCart />{" "}
+            </span>{" "}
+            <span className="hidden md:flex">My Order</span>
+          </NavLink>
         </li>
       )}
       {user && (
         <li className="text-[18px] md:text-[16px] font-medium">
-          <NavLink to="/notification">  <span  className="flex md:hidden"><IoNotificationsSharp /></span> <span className="hidden md:flex">Notification</span></NavLink>
+          <NavLink to="/notification">
+            {" "}
+            <span className="flex md:hidden">
+              <IoNotificationsSharp />
+            </span>{" "}
+            <span className="hidden md:flex">Notification</span>
+          </NavLink>
         </li>
       )}
     </>
@@ -49,7 +82,7 @@ const Navbar = () => {
               href="/"
               className="text-[14px]  md:text-xl font-semibold text-[#F52549] flex items-center gap-2"
             >
-              KidzoMart 
+              KidzoMart
               <span className="text-[10px] sm:text-[16px] text-black hidden lg:block">
                 - A Kids Toy Store Platform
               </span>
@@ -62,7 +95,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end flex items-center gap-3 ">
             <div className="w-8 sm:w-12 h-8 sm:h-12 rounded-full cursor-pointer  ">
-              {user &&(
+              {user && (
                 <div
                   className="tooltip tooltip-left"
                   data-tip={user?.displayName}
@@ -94,18 +127,17 @@ const Navbar = () => {
                 </Link>
               )}
             </div>
-             <div>
-              {
-                user ? "" : (
-                  <Link
+            <div>
+              {user ? (
+                ""
+              ) : (
+                <Link
                   to="/auth/register"
                   className="relative inline-flex items-center justify-center md:px-5 px-4  md:py-2.5 py-1.5 font-semibold text-black overflow-hidden border border-[#FA6775]  rounded-lg group hover:bg-linear-to-r from-[#FA6775]  to-[#F52549] hover:text-white"
                 >
                   <span className="relative">Register</span>
                 </Link>
-                )
-              }
-
+              )}
             </div>
           </div>
         </div>

@@ -6,7 +6,9 @@ AOS.init();
 const BestBrand = () => {
   return (
     <div className="my-10">
-      <h1 className="text-xl md:text-3xl font-bold text-center">Popular Brands</h1>
+      <h1 className="text-xl md:text-3xl font-bold text-center">
+        Popular Brands
+      </h1>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
         <div
           className="card bg-base-300 shadow-sm py-6 lg:py-5 mt-8"
@@ -94,8 +96,6 @@ const BestBrand = () => {
             </h2>
           </div>
         </div>
-
-       
       </div>
     </div>
   );

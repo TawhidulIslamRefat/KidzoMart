@@ -1,61 +1,56 @@
-import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router";
-const ProductCard = ({ product }) => {
-  const {
-    productId,
-    productName,
-    price,
-    rating,
-    pictureURL,
-    availableQuantity,
-  } = product;
+
+export default function ProductCard({ product }) {
+  const { id, name, price, discountPrice, rating, image, stock } = product;
 
   return (
-    <div>
-      <div
-        className="card shadow-sm h-full flex flex-col transition-transform duration-2000 hover:duration-300  hover:bg-red-100"
-        data-aos="fade-up"
-        data-aos-duration="7000"
-      >
-        <figure className="p-5">
+    <div className="p-2">
+      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden">
+        <div className="bg-[#EAF8FF] p-5 flex justify-center rounded-t-2xl">
           <img
-            className="w-30 h-30 lg:w-80 lg:h-80 bg-[#D9D9D9] rounded-xl"
-            src={pictureURL}
-            alt="Product"
+            className="w-32 h-32 lg:w-44 lg:h-44 rounded-xl object-contain"
+            src={image}
+            alt={name}
           />
-        </figure>
-        <div className=" p-3 md:p-5 flex flex-col grow justify-between">
-          <h2 className="text-[13px] lg:text-2xl font-normal lg:font-semibold ">
-            {productName}
+        </div>
+
+        <div className="p-3 flex flex-col gap-1.5">
+          <h2 className="text-[14px] lg:text-xl font-semibold text-gray-700 leading-tight">
+            {name}
           </h2>
-          <div className="flex justify-between items-center gap-2 lg:gap-25 my-3">
-            <p className="flex items-center text-[10px] lg:text-[18px] font-medium gap-1 bg-orange-200 rounded-xl p-1">
-              <span className="text-[10px] lg:text-xl text-orange-500">
-                <FaStar />
-              </span>{" "}
-              {rating}
-            </p>
-            <p className="text-[10px] lg:text-[18px] font-medium bg-base-300 p-1  rounded-xl">
-              <span className="text-red-400">Available -</span>{" "}
-              {availableQuantity}
+
+          <div className="flex items-center justify-between mt-1">
+            <p className="text-lg font-bold text-red-500">${discountPrice}</p>
+            <p className="text-sm line-through text-gray-400">${price}</p>
+          </div>
+
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex items-center gap-1 px-2 py-1 rounded-lg">
+              {Array(Math.floor(rating))
+                .fill()
+                .map((_, i) => (
+                  <FaStar key={i} className="text-orange-500" />
+                ))}
+
+              {rating % 1 >= 0.5 && (
+                <FaStarHalfAlt className="text-orange-500" />
+              )}
+            </div>
+
+            <p className="text-[12px] lg:text-[14px] font-medium bg-gray-200 px-2 py-1 rounded-lg">
+              <span className="text-red-500">stock -</span> {stock}
             </p>
           </div>
-          <p className="text-[11px] lg:text-xl font-medium mb-0 lg:mb-2">
-            Price - $ {price}
-          </p>
-          <div className="card-actions">
-            <Link
-              to={`/product-details/${productId}`}
-              className=" btn mt-1.5 bg-linear-to-r  from-[#FA6775]  to-[#F52549] w-[90%] mx-auto lg:w-full py-0 lg:py-2.5 text-[10px] lg:text-[16px] font-medium text-white rounded-lg"
-            >
-              View Detail
-            </Link>
-          </div>
+
+          <Link
+            to={`/product-details/${id}`}
+            className="mt-3 bg-linear-to-r from-[#FA6775] to-[#F52549] w-full text-center py-2 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition"
+          >
+            View Detail
+          </Link>
         </div>
       </div>
     </div>
   );
-};
-
-export default ProductCard;
+}

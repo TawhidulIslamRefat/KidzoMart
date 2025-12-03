@@ -14,6 +14,7 @@ import MyOrder from "../Pages/MyOrder/MyOrder";
 import Notification from "../Components/Notification/Notification";
 import ProductCard from "../Components/ProductCard/ProductCard";
 import PrivateRoute from "../Provider/Private/PrivateRoute";
+import AllItems from "../Components/AllItems/AllItems";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         ),
       },
       {
+        path: "/all-items",
+        element: <AllItems></AllItems>,
+      },
+      {
         path: "/my-order",
         element: (
           <PrivetRoute>
@@ -45,7 +50,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/top-product",
-        element:<ProductCard></ProductCard>
+        element: <ProductCard></ProductCard>,
       },
       {
         path: "/notification",
@@ -53,7 +58,7 @@ export const router = createBrowserRouter([
           <PrivateRoute>
             <Notification></Notification>
           </PrivateRoute>
-        )       
+        ),
       },
     ],
   },
@@ -78,11 +83,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/product-details/:id",
-    element: (
-      <PrivetRoute>
-        <ProductDetails></ProductDetails>
-      </PrivetRoute>
-    ),
+    element: <ProductDetails></ProductDetails>,
     loader: () => fetch("/product.json"),
   },
   {

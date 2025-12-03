@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    const productDetails = data.find((p) => String(p.productId) === id);
+    const productDetails = data.find((p) => String(p.productid) === id);
     setProduct(productDetails);
   }, [data, id]);
   return (

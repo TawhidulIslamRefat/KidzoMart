@@ -7,10 +7,10 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_apiKey,
   authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
+  projectid: import.meta.env.VITE_projectid,
   storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId,
+  messagingSenderid: import.meta.env.VITE_messagingSenderid,
+  appid: import.meta.env.VITE_appid,
 };
 
 // Initialize Firebase

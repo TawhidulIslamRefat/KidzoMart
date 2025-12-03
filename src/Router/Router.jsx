@@ -13,8 +13,10 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import MyOrder from "../Pages/MyOrder/MyOrder";
 import Notification from "../Components/Notification/Notification";
 import ProductCard from "../Components/ProductCard/ProductCard";
-import PrivateRoute from "../Provider/Private/PrivateRoute";
 import AllItems from "../Components/AllItems/AllItems";
+import AboutUs from "../Pages/About/AboutUs";
+import ContactPage from "../Pages/Contact/ContactPage";
+
 
 export const router = createBrowserRouter([
   {
@@ -53,11 +55,21 @@ export const router = createBrowserRouter([
         element: <ProductCard></ProductCard>,
       },
       {
+        path: "/about-us",
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/contact",
+        element:<ContactPage></ContactPage>,
+      },
+      {
+        path: "/top-product",
+        element: <ProductCard></ProductCard>,
+      },
+      {
         path: "/notification",
         element: (
-          <PrivateRoute>
             <Notification></Notification>
-          </PrivateRoute>
         ),
       },
     ],

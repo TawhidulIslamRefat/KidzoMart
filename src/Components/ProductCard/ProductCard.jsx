@@ -45,7 +45,7 @@ export default function ProductCard({ product }) {
 
           <Link
             to={`/product-details/${id}`}
-            className="mt-3 bg-linear-to-r from-[#FA6775] to-[#F52549] w-full text-center py-2 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition"
+            className="mt-3 bg-linear-to-r from-[#FA6775] to-[#F52549] w-full text-center py-2 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition hover:bg-[#6ECFFF]"
           >
             View Detail
           </Link>

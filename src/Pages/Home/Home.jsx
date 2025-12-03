@@ -5,6 +5,8 @@ import HomeSlider from "../../Components/HomeSlider/HomeSlider";
 import BestBrand from "../../Components/BestBrand/BestBrand";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import NewsLetter from "../../Components/NewsLetter/NewsLetter";
+import MostWantedToy from "../../Components/MostWantedToy/MostWantedToy";
+
 
 const Home = () => {
   const productData = useLoaderData();
@@ -16,6 +18,9 @@ const Home = () => {
       </section>
       <section className="w-10/12 mx-auto my-20">
         <BestBrand></BestBrand>
+      </section>
+      <section className="w-10/12 mx-auto my-20">
+        <MostWantedToy></MostWantedToy>
       </section>
       <section
         id="top-product"

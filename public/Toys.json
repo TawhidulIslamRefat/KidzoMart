@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "order": 1,
     "name": "Colorful Stacking Blocks",
     "brand": "FunBuild",
     "price": 1200,
@@ -11,12 +12,13 @@
     "category": "Educational Toys",
     "ageGroup": "2-6 years",
     "shortDescription": "Bright blocks for building fun.",
-    "description": "Durable, colorful blocks that help children develop motor skills and creativity through stacking and building.",
+    "description": "Durable, colorful blocks ...",
     "features": ["Non-toxic material", "Lightweight", "Easy to clean"],
     "image": "/images/toys/stacking_blocks.png"
   },
   {
     "id": 2,
+    "order": 2,
     "name": "Talking Educational Cat Robot",
     "brand": "SmartKid",
     "price": 2390,
@@ -27,12 +29,14 @@
     "category": "Electronic Toys",
     "ageGroup": "4-12 years",
     "shortDescription": "Talking robot cat that teaches words.",
-    "description": "Interactive robot cat that speaks, sings, and teaches kids basic vocabulary through fun activities.",
+    "description": "Interactive robot cat ...",
     "features": ["Voice interaction", "LED eyes", "Music mode", "Rechargeable"],
     "image": "/images/toys/catbot.png"
   },
+
   {
     "id": 3,
+    "order": 3,
     "name": "Remote Control Car",
     "brand": "Speedster",
     "price": 1800,
@@ -43,12 +47,14 @@
     "category": "Electronic Toys",
     "ageGroup": "5-10 years",
     "shortDescription": "Fast RC car for racing fun.",
-    "description": "High-speed remote control car with smooth steering and long battery life for endless racing fun.",
+    "description": "High-speed remote control car...",
     "features": ["Rechargeable battery", "Durable body", "Easy control"],
     "image": "/images/toys/rc_car.png"
   },
+
   {
     "id": 4,
+    "order": 4,
     "name": "Puzzle Board Set",
     "brand": "BrainyKids",
     "price": 900,
@@ -59,12 +65,14 @@
     "category": "Educational Toys",
     "ageGroup": "3-8 years",
     "shortDescription": "Fun puzzles for learning shapes.",
-    "description": "A set of colorful puzzle boards that enhance problem-solving skills and hand-eye coordination.",
+    "description": "A set of colorful puzzle boards...",
     "features": ["Eco-friendly material", "Bright colors", "Easy to handle"],
     "image": "/images/toys/puzzle_board.png"
   },
+
   {
     "id": 5,
+    "order": 5,
     "name": "Musical Drum Set",
     "brand": "BeatMaster",
     "price": 2500,
@@ -75,12 +83,14 @@
     "category": "Musical Toys",
     "ageGroup": "4-12 years",
     "shortDescription": "Drum set for little musicians.",
-    "description": "Mini drum set with fun sounds that encourages kids to explore rhythm and music.",
+    "description": "Mini drum set with fun sounds...",
     "features": ["Multiple tones", "Sturdy design", "Beginner friendly"],
     "image": "/images/toys/drum_set.png"
   },
+
   {
     "id": 6,
+    "order": 6,
     "name": "Alphabet Learning Tablet",
     "brand": "EduTech",
     "price": 2990,
@@ -91,12 +101,14 @@
     "category": "Electronic Toys",
     "ageGroup": "3-7 years",
     "shortDescription": "Tablet that teaches ABCs and numbers.",
-    "description": "Interactive tablet that helps children learn letters, numbers, and basic math through games.",
+    "description": "Interactive tablet helping kids learn...",
     "features": ["Touchscreen", "Educational games", "Durable"],
     "image": "/images/toys/learning_tablet.png"
   },
+
   {
     "id": 7,
+    "order": 7,
     "name": "Toy Train Set",
     "brand": "TrackMaster",
     "price": 3200,
@@ -107,12 +119,14 @@
     "category": "Vehicle Toys",
     "ageGroup": "3-8 years",
     "shortDescription": "Track train with fun accessories.",
-    "description": "Complete train set with tracks, train engine, and cars to boost imaginative play.",
+    "description": "Complete train set with tracks...",
     "features": ["Easy assembly", "Battery powered", "Interactive tracks"],
     "image": "/images/toys/train_set.png"
   },
+
   {
     "id": 8,
+    "order": 8,
     "name": "Stuffed Teddy Bear",
     "brand": "CuddleBuddy",
     "price": 800,
@@ -123,12 +137,14 @@
     "category": "Soft Toys",
     "ageGroup": "1-6 years",
     "shortDescription": "Soft and cuddly teddy bear.",
-    "description": "Fluffy and huggable teddy bear, perfect companion for kids.",
+    "description": "Fluffy and huggable teddy bear...",
     "features": ["Hypoallergenic", "Machine washable", "Soft fabric"],
     "image": "/images/toys/teddy_bear.png"
   },
+
   {
     "id": 9,
+    "order": 9,
     "name": "Mini Basketball Hoop",
     "brand": "SportsFun",
     "price": 1500,
@@ -139,12 +155,14 @@
     "category": "Sports Toys",
     "ageGroup": "4-12 years",
     "shortDescription": "Indoor basketball fun.",
-    "description": "Adjustable mini hoop for practicing shots indoors or outdoors, great for developing hand-eye coordination.",
+    "description": "Adjustable mini hoop...",
     "features": ["Adjustable height", "Easy to mount", "Durable material"],
     "image": "/images/toys/basketball_hoop.png"
   },
+
   {
     "id": 10,
+    "order": 10,
     "name": "Magic Drawing Board",
     "brand": "CreativeKids",
     "price": 1100,
@@ -155,12 +173,14 @@
     "category": "Art & Craft Toys",
     "ageGroup": "3-8 years",
     "shortDescription": "Reusable drawing board for kids.",
-    "description": "Magnetic drawing board where kids can doodle, erase, and start again without wasting paper.",
+    "description": "Magnetic drawing board...",
     "features": ["Reusable", "No mess", "Portable"],
     "image": "/images/toys/drawing_board.png"
   },
+
   {
     "id": 11,
+    "order": 11,
     "name": "Wooden Shape Sorter",
     "brand": "SkillBuilders",
     "price": 950,
@@ -171,12 +191,14 @@
     "category": "Educational Toys",
     "ageGroup": "1-4 years",
     "shortDescription": "Shapes and colors learning toy.",
-    "description": "Wooden shape sorter helps toddlers learn colors, shapes, and improves hand-eye coordination.",
+    "description": "Wooden shape sorter...",
     "features": ["Non-toxic paint", "Durable", "Easy to clean"],
     "image": "/images/toys/shape_sorter.png"
   },
+
   {
     "id": 12,
+    "order": 12,
     "name": "Glowing LED Yo-Yo",
     "brand": "SpinMaster",
     "price": 500,
@@ -187,12 +209,14 @@
     "category": "Skill Toys",
     "ageGroup": "5-12 years",
     "shortDescription": "LED yo-yo for fun tricks.",
-    "description": "Glowing LED yo-yo that lights up as you spin, perfect for practicing tricks and improving dexterity.",
+    "description": "Glowing LED yo-yo...",
     "features": ["LED lights", "Smooth spin", "Lightweight"],
     "image": "/images/toys/led_yoyo.png"
   },
+
   {
     "id": 13,
+    "order": 13,
     "name": "Bouncing Ball Set",
     "brand": "FunSports",
     "price": 700,
@@ -203,12 +227,14 @@
     "category": "Outdoor Toys",
     "ageGroup": "3-10 years",
     "shortDescription": "Colorful bouncing balls.",
-    "description": "Set of 6 durable balls, perfect for outdoor games and activities.",
+    "description": "Set of 6 durable balls...",
     "features": ["Durable rubber", "Bright colors", "Safe for kids"],
     "image": "/images/toys/bouncing_balls.png"
   },
+
   {
     "id": 14,
+    "order": 14,
     "name": "Mini Play Kitchen",
     "brand": "ChefKids",
     "price": 3500,
@@ -219,12 +245,14 @@
     "category": "Pretend Play",
     "ageGroup": "3-8 years",
     "shortDescription": "Kitchen set for imaginative play.",
-    "description": "Mini kitchen set with realistic utensils and accessories for fun role-playing.",
+    "description": "Mini kitchen set with realistic utensils...",
     "features": ["Durable plastic", "Realistic design", "Safe for kids"],
     "image": "/images/toys/play_kitchen.png"
   },
+
   {
     "id": 15,
+    "order": 15,
     "name": "Remote Control Helicopter",
     "brand": "FlyHigh",
     "price": 4200,
@@ -235,12 +263,14 @@
     "category": "Electronic Toys",
     "ageGroup": "6-12 years",
     "shortDescription": "Fly high with RC helicopter.",
-    "description": "Lightweight and durable helicopter that can fly indoors and outdoors for adventurous kids.",
+    "description": "Lightweight and durable helicopter...",
     "features": ["Rechargeable battery", "Easy to control", "Durable frame"],
     "image": "/images/toys/rc_helicopter.png"
   },
+
   {
     "id": 16,
+    "order": 16,
     "name": "Puzzle Globe",
     "brand": "GeoKids",
     "price": 1800,
@@ -251,12 +281,14 @@
     "category": "Educational Toys",
     "ageGroup": "6-12 years",
     "shortDescription": "Interactive globe puzzle.",
-    "description": "3D globe puzzle to help children learn geography in a fun and interactive way.",
+    "description": "3D globe puzzle to learn geography...",
     "features": ["Educational", "Durable pieces", "Colorful design"],
     "image": "/images/toys/puzzle_globe.png"
   },
+
   {
     "id": 17,
+    "order": 17,
     "name": "Coloring Book Set",
     "brand": "ArtFun",
     "price": 650,
@@ -267,12 +299,14 @@
     "category": "Art & Craft Toys",
     "ageGroup": "3-10 years",
     "shortDescription": "Creative coloring book set.",
-    "description": "Set of coloring books with crayons, perfect for creative expression and improving focus.",
+    "description": "Set of coloring books with crayons...",
     "features": ["Non-toxic crayons", "Variety of designs", "Portable"],
     "image": "/images/toys/coloring_book.png"
   },
+
   {
     "id": 18,
+    "order": 18,
     "name": "Foam Building Blocks",
     "brand": "SoftPlay",
     "price": 1300,
@@ -283,12 +317,14 @@
     "category": "Educational Toys",
     "ageGroup": "2-6 years",
     "shortDescription": "Soft foam blocks for safe play.",
-    "description": "Lightweight foam blocks that are safe for toddlers and encourage imaginative building.",
+    "description": "Lightweight foam blocks...",
     "features": ["Soft material", "Lightweight", "Easy to clean"],
     "image": "/images/toys/foam_blocks.png"
   },
+
   {
     "id": 19,
+    "order": 19,
     "name": "Toy Drum Pad",
     "brand": "BeatKids",
     "price": 2100,
@@ -299,12 +335,14 @@
     "category": "Musical Toys",
     "ageGroup": "4-12 years",
     "shortDescription": "Drum pad for beginner musicians.",
-    "description": "Compact electronic drum pad with multiple sounds to inspire kids’ musical creativity.",
+    "description": "Compact electronic drum pad...",
     "features": ["Multiple sounds", "Portable", "Durable"],
     "image": "/images/toys/drum_pad.png"
   },
+
   {
     "id": 20,
+    "order": 20,
     "name": "Robot Building Kit",
     "brand": "RoboKids",
     "price": 4500,
@@ -315,12 +353,14 @@
     "category": "STEM Toys",
     "ageGroup": "6-12 years",
     "shortDescription": "Build your own robot.",
-    "description": "STEM kit to build programmable robots, encouraging coding and problem-solving skills.",
+    "description": "STEM kit for building programmable robots...",
     "features": ["Educational", "Interactive", "Durable components"],
     "image": "/images/toys/robot_kit.png"
   },
+
   {
     "id": 21,
+    "order": 21,
     "name": "Kinetic Sand Set",
     "brand": "SandPlay",
     "price": 950,
@@ -331,12 +371,14 @@
     "category": "Sensory Toys",
     "ageGroup": "3-8 years",
     "shortDescription": "Moldable kinetic sand set.",
-    "description": "Soft, moldable sand that never dries, perfect for creative sensory play.",
+    "description": "Soft, moldable sand...",
     "features": ["Non-toxic", "Reusable", "Fun shapes"],
     "image": "/images/toys/kinetic_sand.png"
   },
+
   {
     "id": 22,
+    "order": 22,
     "name": "Water Painting Mat",
     "brand": "ArtSplash",
     "price": 1200,
@@ -347,12 +389,14 @@
     "category": "Art & Craft Toys",
     "ageGroup": "2-6 years",
     "shortDescription": "Reusable water drawing mat.",
-    "description": "Special mat for water painting that lets kids draw without making a mess.",
+    "description": "Special mat for water painting...",
     "features": ["Reusable", "No mess", "Educational"],
     "image": "/images/toys/water_paint_mat.png"
   },
+
   {
     "id": 23,
+    "order": 23,
     "name": "Mini Bowling Set",
     "brand": "FunStrike",
     "price": 1700,
@@ -363,12 +407,14 @@
     "category": "Sports Toys",
     "ageGroup": "3-10 years",
     "shortDescription": "Indoor mini bowling set.",
-    "description": "Set of plastic pins and ball for safe indoor bowling fun.",
+    "description": "Set of plastic pins and ball...",
     "features": ["Lightweight", "Safe for kids", "Portable"],
     "image": "/images/toys/mini_bowling.png"
   },
+
   {
     "id": 24,
+    "order": 24,
     "name": "Interactive Storybook",
     "brand": "ReadFun",
     "price": 2200,
@@ -379,12 +425,14 @@
     "category": "Educational Toys",
     "ageGroup": "4-10 years",
     "shortDescription": "Storybook that reads aloud.",
-    "description": "Electronic storybook that narrates stories, helping kids with reading and listening skills.",
+    "description": "Electronic storybook that narrates...",
     "features": ["Voice narration", "Colorful illustrations", "Durable"],
     "image": "/images/toys/interactive_storybook.png"
   },
+
   {
     "id": 25,
+    "order": 25,
     "name": "Toy Race Track",
     "brand": "SpeedPlay",
     "price": 2800,
@@ -395,12 +443,14 @@
     "category": "Vehicle Toys",
     "ageGroup": "4-12 years",
     "shortDescription": "Race track for toy cars.",
-    "description": "Exciting race track set for toy cars with loops and ramps to enhance imaginative play.",
+    "description": "Exciting race track set...",
     "features": ["Easy assembly", "Durable", "Fun track design"],
     "image": "/images/toys/race_track.png"
   },
+
   {
     "id": 26,
+    "order": 26,
     "name": "Soft Animal Puzzle",
     "brand": "PuzzleFun",
     "price": 850,
@@ -411,7 +461,7 @@
     "category": "Educational Toys",
     "ageGroup": "2-6 years",
     "shortDescription": "Cute soft animal puzzle.",
-    "description": "Soft foam animal puzzle pieces that help toddlers learn shapes and animals.",
+    "description": "Soft foam animal puzzle pieces...",
     "features": ["Soft material", "Safe for toddlers", "Easy to clean"],
     "image": "/images/toys/animal_puzzle.png"
   }

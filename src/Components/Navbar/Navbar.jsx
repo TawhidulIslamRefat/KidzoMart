@@ -29,7 +29,8 @@ const Navbar = () => {
           <span className="hidden md:flex">All Toys</span>
         </NavLink>
       </li>
-      <li className="text-[18px] md:text-[16px] font-medium">
+      {user && (
+        <li className="text-[18px] md:text-[16px] font-medium">
         <NavLink to="/my-profile">
           {" "}
           <span className="flex md:hidden">
@@ -38,7 +39,7 @@ const Navbar = () => {
           <span className="hidden md:flex">My Profile</span>
         </NavLink>
       </li>
-
+      )}
       {user && (
         <li className="text-[17px] md:text-[16px] font-medium">
           <NavLink to="/my-order">
@@ -50,7 +51,24 @@ const Navbar = () => {
           </NavLink>
         </li>
       )}
-      {user && (
+        <li className="text-[18px] md:text-[16px] font-medium">
+          <NavLink to="/about-us">
+            {" "}
+            <span className="flex md:hidden">
+              <IoNotificationsSharp />
+            </span>{" "}
+            <span className="hidden md:flex">About Us</span>
+          </NavLink>
+        </li>
+        <li className="text-[18px] md:text-[16px] font-medium">
+          <NavLink to="/contact">
+            {" "}
+            <span className="flex md:hidden">
+              <IoNotificationsSharp />
+            </span>{" "}
+            <span className="hidden md:flex">Contact</span>
+          </NavLink>
+        </li>
         <li className="text-[18px] md:text-[16px] font-medium">
           <NavLink to="/notification">
             {" "}
@@ -60,7 +78,6 @@ const Navbar = () => {
             <span className="hidden md:flex">Notification</span>
           </NavLink>
         </li>
-      )}
     </>
   );
 

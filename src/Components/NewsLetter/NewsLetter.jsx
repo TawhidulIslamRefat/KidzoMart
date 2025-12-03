@@ -9,7 +9,7 @@ const NewsLetter = () => {
     e.target.reset();
   };
   return (
-    <div className="bg-linear-to-r from-[#FA6775]  to-[#F52549]">
+    <div className="bg-linear-to-l from-[#6ECFFF] to-[#1EA7FF]">
       <div className="flex flex-col justify-center items-center py-10">
         <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
           Join Our Kid Toy Newsletter

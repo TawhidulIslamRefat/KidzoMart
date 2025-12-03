@@ -16,7 +16,9 @@ import ProductCard from "../Components/ProductCard/ProductCard";
 import AllItems from "../Components/AllItems/AllItems";
 import AboutUs from "../Pages/About/AboutUs";
 import ContactPage from "../Pages/Contact/ContactPage";
-
+import TermsAndConditions from "../Pages/TermsAndConditions/TermsAndConditions";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import FAQ from "../Pages/FAQ/FAQ";
 
 export const router = createBrowserRouter([
   {
@@ -60,7 +62,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element:<ContactPage></ContactPage>,
+        element: <ContactPage></ContactPage>,
       },
       {
         path: "/top-product",
@@ -68,9 +70,19 @@ export const router = createBrowserRouter([
       },
       {
         path: "/notification",
-        element: (
-            <Notification></Notification>
-        ),
+        element: <Notification></Notification>,
+      },
+      {
+        path: "/terms",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/privacy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ />,
       },
     ],
   },
@@ -96,7 +108,7 @@ export const router = createBrowserRouter([
   {
     path: "/product-details/:id",
     element: <ProductDetails></ProductDetails>,
-    loader: () => fetch("/product.json"),
+    loader: () => fetch("/Toys.json"),
   },
   {
     path: "/*",

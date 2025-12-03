@@ -1,101 +1,140 @@
-import { use } from "react";
-import { FaStar } from "react-icons/fa";
-import { OrderContext } from "../../Provider/OrderProvider/OrderProvider";
+import { useState, useContext } from "react";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaInstagram } from "react-icons/fa";
+import { AiOutlineHeart } from "react-icons/ai";
+import { FiRefreshCw } from "react-icons/fi";
 import { toast, ToastContainer } from "react-toastify";
+import { OrderContext } from "../../Provider/OrderProvider/OrderProvider";
 
 const ProductDetailsCard = ({ product }) => {
-  const { addOrder } = use(OrderContext);
+  const [quantity, setQuantity] = useState(1);
+  const { addOrder } = useContext(OrderContext);
 
   const {
-    productName,
-    sellerName,
-    sellerEmail,
+    name,
+    image,
     price,
+    discountPrice,
     rating,
-    availableQuantity,
+    stock,
+    shortDescription,
     description,
-    pictureURL,
-    subCategory,
+    features = [],
+    category,
+    brand,
+    ageGroup,
+    SKU,
   } = product;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addOrder(product);
-    toast.success("Your Request is Successfully Progress");
-    e.target.reset();
+  const handleOrder = () => {
+    const orderData = {
+      ...product,
+      orderQuantity: quantity,
+      totalPrice: discountPrice * quantity,
+    };
+
+    addOrder(orderData);
+    toast.success("Order placed successfully!");
   };
 
   return (
-    <div className=" w-[97%] md:w-full lg:w-10/12 mx-auto my-10 p-6 bg-[#FAF6E9] items-center shadow-xl rounded-xl flex flex-col lg:flex-row gap-8">
-      <title>{subCategory}</title>
-      <ToastContainer></ToastContainer>
-      <div className="">
-        <img
-          src={pictureURL}
-          alt={productName}
-          className="w-full lg:w-96 h-50 md:h-96  rounded-xl"
-        />
-      </div>
-      <div className="flex-1 flex flex-col justify-between gap-6">
+    <div className="container mx-auto px-6 py-10">
+      <ToastContainer />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        {/* ---------- Image Section ---------- */}
+        <div className="border rounded-2xl p-5 shadow-sm">
+          <img
+            src={image}
+            alt={name}
+            className="w-full rounded-xl object-cover"
+          />
+        </div>
+
+        {/* ---------- Product Info Section ---------- */}
         <div>
-          <h1 className="text-xl md:text-3xl font-bold mb-2">{productName}</h1>
-          <p className="text-[14px] text-gray-500 mb-4">
-            Category: {subCategory}
+          <p className="text-yellow-500 text-lg font-semibold">
+            ⭐ {rating} <span className="text-gray-500 text-sm">(Customer reviews)</span>
           </p>
 
-          <div className="flex items-center gap-4 mb-4">
-            <p className="flex items-center gap-1 bg-orange-100 text-orange-600 px-1.5 py-0.5 md:px-3 md:py-1 rounded-lg">
-              <FaStar /> {rating}
-            </p>
-            <p className="bg-gray-100 text-gray-700 px-1.5 py-0.5 md:px-3 md:py-1 rounded-lg">
-              Available: {availableQuantity}
-            </p>
+          <h2 className="text-3xl font-bold mt-1">{name}</h2>
+
+          <p className="text-gray-600 mt-3">{shortDescription}</p>
+
+          <div className="flex items-end gap-3 mt-5">
+            <p className="text-3xl font-bold text-teal-600">৳{discountPrice}</p>
+            <p className="text-lg line-through text-gray-400">৳{price}</p>
           </div>
 
-          <p className=" text-[16px] md:text-xl font-semibold mb-4">
-            Price: ${price}
+          <p className="text-green-600 font-semibold mt-1">
+            ✔ In stock ({stock} pcs)
           </p>
 
-          <div className="mb-4">
-            <h2 className="text-[14px] md:text-lg font-medium mb-1">
-              Seller Info:
-            </h2>
-            <p>{sellerName}</p>
-            <p className="text-gray-500 text-[14px]">{sellerEmail}</p>
-          </div>
+          {/* Quantity + Order Button */}
+          <div className="flex items-center gap-4 mt-6">
+            <div className="flex items-center border rounded-lg px-3 py-2">
+              <button
+                onClick={() => quantity > 1 && setQuantity(quantity - 1)}
+                className="px-2 text-xl"
+              >
+                -
+              </button>
+              <span className="px-4 text-lg">{quantity}</span>
+              <button
+                onClick={() => setQuantity(quantity + 1)}
+                className="px-2 text-xl"
+              >
+                +
+              </button>
+            </div>
 
-          <div>
-            <h2 className="text-[16px] md:text-lg font-medium mb-1">
-              Description:
-            </h2>
-            <p className="text-gray-700 text-[14px]">{description}</p>
-          </div>
-        </div>
-        <div className="mt-4 p-4 bg-gray-100 rounded-lg">
-          <h2 className="text-xl font-semibold mb-3">Try Now</h2>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              className="input input-bordered w-full"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              className="input input-bordered w-full"
-              required
-            />
             <button
-              type="submit"
-              className="btn text-white bg-linear-to-r from-[#FA6775]  to-[#F52549] mt-2"
+              onClick={handleOrder}
+              className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold"
             >
-              Try Now
+              Order Now
             </button>
-          </form>
+
+            <button className="p-3 border rounded-lg">
+              <AiOutlineHeart size={22} />
+            </button>
+
+            <button className="p-3 border rounded-lg">
+              <FiRefreshCw size={22} />
+            </button>
+          </div>
+
+          {/* Extra Info */}
+          <div className="grid grid-cols-2 gap-4 mt-8 text-gray-600">
+            <p><b>SKU:</b> {SKU}</p>
+            <p><b>Category:</b> {category}</p>
+            <p><b>Age Group:</b> {ageGroup}</p>
+            <p><b>Brand:</b> {brand}</p>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4 mt-6 text-gray-600">
+            <span className="font-semibold">Share:</span>
+            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaPinterestP /> <FaInstagram />
+          </div>
         </div>
+      </div>
+
+      {/* ---------- Description Section ---------- */}
+      <div className="mt-12">
+        <div className="flex gap-4 border-b pb-2">
+          <button className="bg-teal-600 text-white px-6 py-2 rounded-full font-semibold">
+            Description
+          </button>
+        </div>
+
+        <p className="text-gray-600 mt-6 leading-7">{description}</p>
+
+        <ul className="list-disc ml-6 text-gray-700 mt-3">
+          {features.map((f, i) => (
+            <li key={i}>{f}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

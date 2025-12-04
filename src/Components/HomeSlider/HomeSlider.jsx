@@ -36,7 +36,11 @@ const HomeSlider = () => {
 
             {/* LEFT TEXT */}
             <div className="flex-1 z-10">
+<<<<<<< HEAD
               <span className="bg-yellow-300 text-black text-sm px-4 py-1 rounded-full md:text-lg font-medium">
+=======
+              <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
                 FREE Delivery on Orders Over $20
               </span>
 
@@ -58,7 +62,11 @@ const HomeSlider = () => {
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/01/h1banner_1.png"
                 alt="Kid"
+<<<<<<< HEAD
                 className="w-72 md:w-150 h-40 md:h-165 drop-shadow-2xl pt-5 md:pt-15 hidden md:flex"
+=======
+                className="w-72 md:w-150 h-40 md:h-165 drop-shadow-2xl pt-5 md:pt-15"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
 
               <img
@@ -118,19 +126,31 @@ const HomeSlider = () => {
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/h4banner_1.png"
                 alt="Kid"
+<<<<<<< HEAD
                 className="w-72 md:w-150 h-50 md:h-165 drop-shadow-2xl pt-5 md:pt-15"
+=======
+                className="w-72 md:w-150 h-40 md:h-165 drop-shadow-2xl pt-5 md:pt-15"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
 
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/parasuit-2.svg"
                 alt="toy"
+<<<<<<< HEAD
                 className="absolute left-15 top-20 w-20 animate-bounce hidden md:flex"
+=======
+                className="absolute left-15 top-20 w-20 animate-bounce"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
 
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/hero-elements-1.svg"
                 alt="plane"
+<<<<<<< HEAD
                 className="absolute right-15 top-15 w-20 animate-pulse hidden md:flex"
+=======
+                className="absolute right-15 top-15 w-20 animate-pulse"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
             </div>
           </section>
@@ -178,19 +198,31 @@ const HomeSlider = () => {
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/01/h1banner_1.png"
                 alt="Kid"
+<<<<<<< HEAD
                 className="w-50 md:w-150 h-40 md:h-165 drop-shadow-2xl pt-5 md:pt-15"
+=======
+                className="w-72 md:w-150 h-40 md:h-165 drop-shadow-2xl pt-5 md:pt-15"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
 
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/hero-elements-1.svg"
                 alt="rocket"
+<<<<<<< HEAD
                 className="absolute left-15 top-20 w-20 animate-bounce hidden md:flex"
+=======
+                className="absolute left-15 top-20 w-20 animate-bounce"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
 
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/01/banner1-element_01.svg"
                 alt="plane"
+<<<<<<< HEAD
                 className="absolute right-15 top-15 w-20 animate-pulse hidden md:flex"
+=======
+                className="absolute right-15 top-15 w-20 animate-pulse"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               />
             </div>
           </section>

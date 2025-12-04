@@ -16,10 +16,17 @@ const Home = () => {
       <section className="w-[98%] lg:w-10/12 mx-auto mt-10">
         <HomeSlider product={productData}></HomeSlider>
       </section>
+<<<<<<< HEAD
       <section className="w-10/12 mx-auto my-10 md:my-20">
         <BestBrand></BestBrand>
       </section>
       <section className=" w-full md:w-10/12 mx-auto my-10 md:my-20">
+=======
+      <section className="w-10/12 mx-auto my-20">
+        <BestBrand></BestBrand>
+      </section>
+      <section className="w-10/12 mx-auto my-20">
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
         <MostWantedToy></MostWantedToy>
       </section>
       <section

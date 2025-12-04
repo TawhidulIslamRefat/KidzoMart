@@ -13,7 +13,11 @@
     "shortDescription": "Bright blocks for building fun.",
     "description": "Durable, colorful blocks that help children develop motor skills and creativity through stacking and building.",
     "features": ["Non-toxic material", "Lightweight", "Easy to clean"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20250317/original/pngtree-colorful-building-blocks-stacked-together-png-image_20674397.png"
+=======
+    "image": "/images/toys/stacking_blocks.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 2,
@@ -29,7 +33,11 @@
     "shortDescription": "Talking robot cat that teaches words.",
     "description": "Interactive robot cat that speaks, sings, and teaches kids basic vocabulary through fun activities.",
     "features": ["Voice interaction", "LED eyes", "Music mode", "Rechargeable"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/047/311/549/small_2x/cute-cat-robot-3d-design-free-png.png"
+=======
+    "image": "/images/toys/catbot.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 3,
@@ -45,7 +53,11 @@
     "shortDescription": "Fast RC car for racing fun.",
     "description": "High-speed remote control car with smooth steering and long battery life for endless racing fun.",
     "features": ["Rechargeable battery", "Durable body", "Easy control"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241203/ourmid/pngtree-remote-control-car-png-image_13495932.png"
+=======
+    "image": "/images/toys/rc_car.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 4,
@@ -61,7 +73,11 @@
     "shortDescription": "Fun puzzles for learning shapes.",
     "description": "A set of colorful puzzle boards that enhance problem-solving skills and hand-eye coordination.",
     "features": ["Eco-friendly material", "Bright colors", "Easy to handle"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241120/ourmid/pngtree-wooden-puzzle-board-4-color-png-image_14509137.png"
+=======
+    "image": "/images/toys/puzzle_board.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 5,
@@ -77,11 +93,19 @@
     "shortDescription": "Drum set for little musicians.",
     "description": "Mini drum set with fun sounds that encourages kids to explore rhythm and music.",
     "features": ["Multiple tones", "Sturdy design", "Beginner friendly"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241014/ourmid/pngtree-musical-drum-set-on-white-background-png-image_14091767.png"
   },
   {
     "id": 6,
     "name": "Alphabet Tablet",
+=======
+    "image": "/images/toys/drum_set.png"
+  },
+  {
+    "id": 6,
+    "name": "Alphabet Learning Tablet",
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
     "brand": "EduTech",
     "price": 2990,
     "discountPrice": 2590,
@@ -93,7 +117,11 @@
     "shortDescription": "Tablet that teaches ABCs and numbers.",
     "description": "Interactive tablet that helps children learn letters, numbers, and basic math through games.",
     "features": ["Touchscreen", "Educational games", "Durable"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/067/859/236/small/3d-chalkboard-icon-perfect-for-online-courses-presentations-educational-materials-png.png"
+=======
+    "image": "/images/toys/learning_tablet.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 7,
@@ -109,7 +137,11 @@
     "shortDescription": "Track train with fun accessories.",
     "description": "Complete train set with tracks, train engine, and cars to boost imaginative play.",
     "features": ["Easy assembly", "Battery powered", "Interactive tracks"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20240129/ourmid/pngtree-d-illustration-of-kids-on-a-toy-train-toy-train-3d-png-image_11559470.png"
+=======
+    "image": "/images/toys/train_set.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 8,
@@ -125,7 +157,11 @@
     "shortDescription": "Soft and cuddly teddy bear.",
     "description": "Fluffy and huggable teddy bear, perfect companion for kids.",
     "features": ["Hypoallergenic", "Machine washable", "Soft fabric"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-cute-bear-teddy-toy-png-image_10149481.png"
+=======
+    "image": "/images/toys/teddy_bear.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 9,
@@ -141,7 +177,11 @@
     "shortDescription": "Indoor basketball fun.",
     "description": "Adjustable mini hoop for practicing shots indoors or outdoors, great for developing hand-eye coordination.",
     "features": ["Adjustable height", "Easy to mount", "Durable material"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20240317/ourmid/pngtree-wall-mounted-mini-basketball-hoop-png-image_11999827.png"
+=======
+    "image": "/images/toys/basketball_hoop.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 10,
@@ -157,6 +197,10 @@
     "shortDescription": "Reusable drawing board for kids.",
     "description": "Magnetic drawing board where kids can doodle, erase, and start again without wasting paper.",
     "features": ["Reusable", "No mess", "Portable"],
+<<<<<<< HEAD
     "image": "https://agreenerwood.com/cdn/shop/files/a29udGFpbmVyL25ldy80OTQ5LzE1NjAwMjAwdjEucG5n_300x300.webp?v=1755143582"
+=======
+    "image": "/images/toys/drawing_board.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   }
 ]

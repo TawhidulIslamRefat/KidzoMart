@@ -30,11 +30,19 @@ const ContactPage = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-10 md:py-20 px-6 md:px-20">
       <Toaster position="top-right" reverseOrder={false} />
 
       {/* Heading */}
       <h1 className=" text-2xl md:text-4xl font-extrabold text-gray-800 mb-6">
+=======
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-20 px-6 md:px-20">
+      <Toaster position="top-right" reverseOrder={false} />
+
+      {/* Heading */}
+      <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
         Contact <span >Us</span>
       </h1>
       <p className="text-gray-600 text-lg md:text-xl mb-12 max-w-2xl text-center">
@@ -44,7 +52,11 @@ const ContactPage = () => {
       {/* Form */}
       <form
         onSubmit={handleSubmit}
+<<<<<<< HEAD
         className="bg-white p-5 md:p-10 rounded-3xl shadow-lg w-full max-w-3xl flex flex-col gap-6"
+=======
+        className="bg-white p-10 rounded-3xl shadow-lg w-full max-w-3xl flex flex-col gap-6"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
       >
         <div className="flex flex-col md:flex-row gap-6">
           <input

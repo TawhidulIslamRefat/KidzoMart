@@ -14,7 +14,11 @@
     "shortDescription": "Bright blocks for building fun.",
     "description": "Durable, colorful blocks ...",
     "features": ["Non-toxic material", "Lightweight", "Easy to clean"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20250317/original/pngtree-colorful-building-blocks-stacked-together-png-image_20674397.png"
+=======
+    "image": "/images/toys/stacking_blocks.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
   {
     "id": 2,
@@ -31,7 +35,11 @@
     "shortDescription": "Talking robot cat that teaches words.",
     "description": "Interactive robot cat ...",
     "features": ["Voice interaction", "LED eyes", "Music mode", "Rechargeable"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/047/311/549/small_2x/cute-cat-robot-3d-design-free-png.png"
+=======
+    "image": "/images/toys/catbot.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -49,7 +57,11 @@
     "shortDescription": "Fast RC car for racing fun.",
     "description": "High-speed remote control car...",
     "features": ["Rechargeable battery", "Durable body", "Easy control"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241203/ourmid/pngtree-remote-control-car-png-image_13495932.png"
+=======
+    "image": "/images/toys/rc_car.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -67,7 +79,11 @@
     "shortDescription": "Fun puzzles for learning shapes.",
     "description": "A set of colorful puzzle boards...",
     "features": ["Eco-friendly material", "Bright colors", "Easy to handle"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241120/ourmid/pngtree-wooden-puzzle-board-4-color-png-image_14509137.png"
+=======
+    "image": "/images/toys/puzzle_board.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -85,7 +101,11 @@
     "shortDescription": "Drum set for little musicians.",
     "description": "Mini drum set with fun sounds...",
     "features": ["Multiple tones", "Sturdy design", "Beginner friendly"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20241014/ourmid/pngtree-musical-drum-set-on-white-background-png-image_14091767.png"
+=======
+    "image": "/images/toys/drum_set.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -103,7 +123,11 @@
     "shortDescription": "Tablet that teaches ABCs and numbers.",
     "description": "Interactive tablet helping kids learn...",
     "features": ["Touchscreen", "Educational games", "Durable"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/067/859/236/small/3d-chalkboard-icon-perfect-for-online-courses-presentations-educational-materials-png.png"
+=======
+    "image": "/images/toys/learning_tablet.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -121,7 +145,11 @@
     "shortDescription": "Track train with fun accessories.",
     "description": "Complete train set with tracks...",
     "features": ["Easy assembly", "Battery powered", "Interactive tracks"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20240129/ourmid/pngtree-d-illustration-of-kids-on-a-toy-train-toy-train-3d-png-image_11559470.png"
+=======
+    "image": "/images/toys/train_set.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -139,7 +167,11 @@
     "shortDescription": "Soft and cuddly teddy bear.",
     "description": "Fluffy and huggable teddy bear...",
     "features": ["Hypoallergenic", "Machine washable", "Soft fabric"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-cute-bear-teddy-toy-png-image_10149481.png"
+=======
+    "image": "/images/toys/teddy_bear.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -157,7 +189,11 @@
     "shortDescription": "Indoor basketball fun.",
     "description": "Adjustable mini hoop...",
     "features": ["Adjustable height", "Easy to mount", "Durable material"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20240317/ourmid/pngtree-wall-mounted-mini-basketball-hoop-png-image_11999827.png"
+=======
+    "image": "/images/toys/basketball_hoop.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -175,7 +211,11 @@
     "shortDescription": "Reusable drawing board for kids.",
     "description": "Magnetic drawing board...",
     "features": ["Reusable", "No mess", "Portable"],
+<<<<<<< HEAD
     "image": "https://agreenerwood.com/cdn/shop/files/a29udGFpbmVyL25ldy80OTQ5LzE1NjAwMjAwdjEucG5n_300x300.webp?v=1755143582"
+=======
+    "image": "/images/toys/drawing_board.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -193,7 +233,11 @@
     "shortDescription": "Shapes and colors learning toy.",
     "description": "Wooden shape sorter...",
     "features": ["Non-toxic paint", "Durable", "Easy to clean"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20250825/ourmid/pngtree-educational-wooden-shape-sorter-toy-for-toddlers-png-image_17205902.webp"
+=======
+    "image": "/images/toys/shape_sorter.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -211,7 +255,11 @@
     "shortDescription": "LED yo-yo for fun tricks.",
     "description": "Glowing LED yo-yo...",
     "features": ["LED lights", "Smooth spin", "Lightweight"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/045/719/784/small/yoyo-isolated-on-background-3d-rendering-illustration-png.png"
+=======
+    "image": "/images/toys/led_yoyo.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -229,7 +277,11 @@
     "shortDescription": "Colorful bouncing balls.",
     "description": "Set of 6 durable balls...",
     "features": ["Durable rubber", "Bright colors", "Safe for kids"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20250826/ourmid/pngtree-colorful-rubber-bouncy-balls-toy-set-png-image_17227760.webp"
+=======
+    "image": "/images/toys/bouncing_balls.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -247,7 +299,11 @@
     "shortDescription": "Kitchen set for imaginative play.",
     "description": "Mini kitchen set with realistic utensils...",
     "features": ["Durable plastic", "Realistic design", "Safe for kids"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20240927/original/pngtree-plastic-toy-kitchen-playset-with-cookware-png-image_16101838.png"
+=======
+    "image": "/images/toys/play_kitchen.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -265,7 +321,11 @@
     "shortDescription": "Fly high with RC helicopter.",
     "description": "Lightweight and durable helicopter...",
     "features": ["Rechargeable battery", "Easy to control", "Durable frame"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20240828/original/pngtree-red-and-black-color-hellcopter-toy-png-image_15876656.png"
+=======
+    "image": "/images/toys/rc_helicopter.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -283,7 +343,11 @@
     "shortDescription": "Interactive globe puzzle.",
     "description": "3D globe puzzle to learn geography...",
     "features": ["Educational", "Durable pieces", "Colorful design"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-vector/20240204/ourmid/pngtree-jigsaw-puzzle-globe-sphere-png-image_11611820.png"
+=======
+    "image": "/images/toys/puzzle_globe.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -301,7 +365,11 @@
     "shortDescription": "Creative coloring book set.",
     "description": "Set of coloring books with crayons...",
     "features": ["Non-toxic crayons", "Variety of designs", "Portable"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20250506/original/pngtree-8-sets-of-cartoon-color-books-vector-material-collection-png-image_5452560.png"
+=======
+    "image": "/images/toys/coloring_book.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -319,7 +387,11 @@
     "shortDescription": "Soft foam blocks for safe play.",
     "description": "Lightweight foam blocks...",
     "features": ["Soft material", "Lightweight", "Easy to clean"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/067/413/885/small_2x/colorful-foam-building-blocks-set-for-creative-play-and-learning-png.png"
+=======
+    "image": "/images/toys/foam_blocks.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -337,7 +409,11 @@
     "shortDescription": "Drum pad for beginner musicians.",
     "description": "Compact electronic drum pad...",
     "features": ["Multiple sounds", "Portable", "Durable"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/previews/071/481/878/non_2x/a-colorful-3d-toy-drum-with-drumsticks-presented-as-an-isolated-object-on-a-transparent-background-png.png"
+=======
+    "image": "/images/toys/drum_pad.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -355,7 +431,11 @@
     "shortDescription": "Build your own robot.",
     "description": "STEM kit for building programmable robots...",
     "features": ["Educational", "Interactive", "Durable components"],
+<<<<<<< HEAD
     "image": "https://tinnitots.com.au/cdn/shop/files/Kids_Robot_Building_Kit_Toyi.png?v=1724629841"
+=======
+    "image": "/images/toys/robot_kit.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -373,7 +453,11 @@
     "shortDescription": "Moldable kinetic sand set.",
     "description": "Soft, moldable sand...",
     "features": ["Non-toxic", "Reusable", "Fun shapes"],
+<<<<<<< HEAD
     "image": "https://www.toysrus.com.my/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw17a5ec5b/4/d/3/6/4d36272b07440c21887131735f010896d753b10a_1.jpg?sw=500&sh=500&q=75"
+=======
+    "image": "/images/toys/kinetic_sand.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -391,7 +475,11 @@
     "shortDescription": "Reusable water drawing mat.",
     "description": "Special mat for water painting...",
     "features": ["Reusable", "No mess", "Educational"],
+<<<<<<< HEAD
     "image": "https://img.drz.lazcdn.com/static/bd/p/f342a71c3774fbf8b16c5b53ee771a7a.png_720x720q80.png"
+=======
+    "image": "/images/toys/water_paint_mat.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -409,7 +497,11 @@
     "shortDescription": "Indoor mini bowling set.",
     "description": "Set of plastic pins and ball...",
     "features": ["Lightweight", "Safe for kids", "Portable"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20220911/original/pngtree-complete-bowling-game-png-image_8536563.png"
+=======
+    "image": "/images/toys/mini_bowling.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -427,7 +519,11 @@
     "shortDescription": "Storybook that reads aloud.",
     "description": "Electronic storybook that narrates...",
     "features": ["Voice narration", "Colorful illustrations", "Durable"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20220228/original/pngtree-boy-read-a-storybook-on-bean-bag-png-image_7325859.png"
+=======
+    "image": "/images/toys/interactive_storybook.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -445,7 +541,11 @@
     "shortDescription": "Race track for toy cars.",
     "description": "Exciting race track set...",
     "features": ["Easy assembly", "Durable", "Fun track design"],
+<<<<<<< HEAD
     "image": "https://png.pngtree.com/png-clipart/20250205/original/pngtree-vibrant-hot-wheels-track-setup-with-toy-cars-on-curvy-tracks-png-image_19453322.png"
+=======
+    "image": "/images/toys/race_track.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   },
 
   {
@@ -463,6 +563,10 @@
     "shortDescription": "Cute soft animal puzzle.",
     "description": "Soft foam animal puzzle pieces...",
     "features": ["Soft material", "Safe for toddlers", "Easy to clean"],
+<<<<<<< HEAD
     "image": "https://static.vecteezy.com/system/resources/thumbnails/036/625/144/small/ai-generated-bear-plush-toy-on-transparent-background-free-png.png"
+=======
+    "image": "/images/toys/animal_puzzle.png"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   }
 ]

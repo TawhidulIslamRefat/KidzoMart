@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import { useState, useContext, useEffect } from "react";
 import { 
   FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaInstagram, FaStar 
 } from "react-icons/fa";
+=======
+import { useState, useContext } from "react";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP, FaInstagram } from "react-icons/fa";
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiRefreshCw } from "react-icons/fi";
 import { toast, ToastContainer } from "react-toastify";
 import { OrderContext } from "../../Provider/OrderProvider/OrderProvider";
+<<<<<<< HEAD
 import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetailsCard = ({ product }) => {
@@ -14,6 +20,11 @@ const ProductDetailsCard = ({ product }) => {
   const [activeTab, setActiveTab] = useState("description"); // tabs
   const [userRating, setUserRating] = useState(0);
   const [reviews, setReviews] = useState([]);
+=======
+
+const ProductDetailsCard = ({ product }) => {
+  const [quantity, setQuantity] = useState(1);
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   const { addOrder } = useContext(OrderContext);
 
   const {
@@ -32,6 +43,7 @@ const ProductDetailsCard = ({ product }) => {
     SKU,
   } = product;
 
+<<<<<<< HEAD
   // Load rating & reviews from localStorage
   useEffect(() => {
     const savedRating = localStorage.getItem(`rating-${name}`);
@@ -40,12 +52,15 @@ const ProductDetailsCard = ({ product }) => {
     if (savedReviews) setReviews(JSON.parse(savedReviews));
   }, [name]);
 
+=======
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   const handleOrder = () => {
     const orderData = {
       ...product,
       orderQuantity: quantity,
       totalPrice: discountPrice * quantity,
     };
+<<<<<<< HEAD
     addOrder(orderData);
     toast.success("✅ Order placed successfully!");
   };
@@ -72,25 +87,43 @@ const ProductDetailsCard = ({ product }) => {
     setReviews(updatedReviews);
     localStorage.setItem(`reviews-${name}`, JSON.stringify(updatedReviews));
     toast.success("📝 Review added!");
+=======
+
+    addOrder(orderData);
+    toast.success("Order placed successfully!");
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
   };
 
   return (
     <div className="container mx-auto px-6 py-10">
+<<<<<<< HEAD
       <ToastContainer position="top-right" autoClose={2000} />
+=======
+      <ToastContainer />
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* ---------- Image Section ---------- */}
+<<<<<<< HEAD
         <div className="border rounded-2xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={image}
             alt={name}
             className="w-full rounded-xl object-cover hover:scale-105 transition-transform duration-300"
+=======
+        <div className="border rounded-2xl p-5 shadow-sm">
+          <img
+            src={image}
+            alt={name}
+            className="w-full rounded-xl object-cover"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
           />
         </div>
 
         {/* ---------- Product Info Section ---------- */}
         <div>
+<<<<<<< HEAD
           {/* Rating Display */}
           <p className="text-orange-600 text-lg font-semibold flex items-center gap-1">
             <FaStar className="text-orange-500 text-[19px]" /> {rating} 
@@ -141,15 +174,55 @@ const ProductDetailsCard = ({ product }) => {
                 onClick={() => setQuantity(quantity + 1)}
                 className="px-2 text-xl hover:text-[#F52549] transition-colors"
               >+</button>
+=======
+          <p className="text-yellow-500 text-lg font-semibold">
+            ⭐ {rating} <span className="text-gray-500 text-sm">(Customer reviews)</span>
+          </p>
+
+          <h2 className="text-3xl font-bold mt-1">{name}</h2>
+
+          <p className="text-gray-600 mt-3">{shortDescription}</p>
+
+          <div className="flex items-end gap-3 mt-5">
+            <p className="text-3xl font-bold text-teal-600">৳{discountPrice}</p>
+            <p className="text-lg line-through text-gray-400">৳{price}</p>
+          </div>
+
+          <p className="text-green-600 font-semibold mt-1">
+            ✔ In stock ({stock} pcs)
+          </p>
+
+          {/* Quantity + Order Button */}
+          <div className="flex items-center gap-4 mt-6">
+            <div className="flex items-center border rounded-lg px-3 py-2">
+              <button
+                onClick={() => quantity > 1 && setQuantity(quantity - 1)}
+                className="px-2 text-xl"
+              >
+                -
+              </button>
+              <span className="px-4 text-lg">{quantity}</span>
+              <button
+                onClick={() => setQuantity(quantity + 1)}
+                className="px-2 text-xl"
+              >
+                +
+              </button>
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             </div>
 
             <button
               onClick={handleOrder}
+<<<<<<< HEAD
               className="bg-linear-to-r from-[#FA6775] to-[#F52549] text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 shadow-md"
+=======
+              className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold"
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             >
               Order Now
             </button>
 
+<<<<<<< HEAD
             <button
               onClick={handleLove}
               className="p-3 border rounded-lg hover:bg-[#FAF0F2] transition-colors"
@@ -167,6 +240,14 @@ const ProductDetailsCard = ({ product }) => {
               className="p-3 border rounded-lg hover:bg-[#FAF0F2] transition-colors"
             >
               <FiRefreshCw size={24} className="cursor-pointer" />
+=======
+            <button className="p-3 border rounded-lg">
+              <AiOutlineHeart size={22} />
+            </button>
+
+            <button className="p-3 border rounded-lg">
+              <FiRefreshCw size={22} />
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             </button>
           </div>
 
@@ -181,15 +262,20 @@ const ProductDetailsCard = ({ product }) => {
           {/* Social Icons */}
           <div className="flex items-center gap-4 mt-6 text-gray-600">
             <span className="font-semibold">Share:</span>
+<<<<<<< HEAD
             <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#1877F2] transition-colors"><FaFacebookF size={28} className="cursor-pointer" /></a>
             <a href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${name}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#1DA1F2] transition-colors"><FaTwitter size={28} className="cursor-pointer" /></a>
             <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${name}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#0A66C2] transition-colors"><FaLinkedinIn size={28} className="cursor-pointer" /></a>
             <a href={`https://pinterest.com/pin/create/button/?url=${window.location.href}&description=${name}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#BD081C] transition-colors"><FaPinterestP size={28} className="cursor-pointer" /></a>
             <a href={`https://www.instagram.com/`} target="_blank" rel="noopener noreferrer" className="hover:text-[#E4405F] transition-colors"><FaInstagram size={28} className="cursor-pointer" /></a>
+=======
+            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaPinterestP /> <FaInstagram />
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
           </div>
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* ---------- Tabs: Description / Reviews ---------- */}
       <div className="mt-12">
         <div className="flex gap-4 border-b pb-2">
@@ -280,6 +366,23 @@ const ProductDetailsCard = ({ product }) => {
             {reviews.length === 0 && <p className="text-gray-500">No reviews yet.</p>}
           </div>
         )}
+=======
+      {/* ---------- Description Section ---------- */}
+      <div className="mt-12">
+        <div className="flex gap-4 border-b pb-2">
+          <button className="bg-teal-600 text-white px-6 py-2 rounded-full font-semibold">
+            Description
+          </button>
+        </div>
+
+        <p className="text-gray-600 mt-6 leading-7">{description}</p>
+
+        <ul className="list-disc ml-6 text-gray-700 mt-3">
+          {features.map((f, i) => (
+            <li key={i}>{f}</li>
+          ))}
+        </ul>
+>>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
       </div>
     </div>
   );

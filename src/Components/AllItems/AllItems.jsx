@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import toysData from "../../../public/Toys.json"; // your local JSON data file
+import toysData from "../../../public/Toys.json"; 
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router";
 
@@ -10,18 +10,18 @@ const AllItems = () => {
   const [inputText, setInputText] = useState("");
   const [sort, setSort] = useState("");
 
-  // Search + Sorting Function
+  
   useEffect(() => {
     let data = [...items];
 
-    // Search filter
+    
     if (inputText) {
       data = data.filter((item) =>
         item.name.toLowerCase().includes(inputText.toLowerCase())
       );
     }
 
-    // Sorting filter
+  
     if (sort === "order-asc") {
       data.sort((a, b) => a.price - b.price);
     } else if (sort === "order-desc") {
@@ -33,7 +33,6 @@ const AllItems = () => {
 
   return (
     <div>
-      {/* ------------------- Banner Section ------------------- */}
       <section>
         <div className="bg-[#F8F7F7] relative py-0 sm:py-15 md:py-20">
           <div className="w-10/12 mx-auto grid lg:grid-cols-2 items-center gap-10 py-15">
@@ -52,8 +51,6 @@ const AllItems = () => {
                 Explore amazing kids toys with perfect pricing, quality and
                 variety.
               </p>
-
-              {/* Search & Sort Box */}
               <div
                 className="shadow-lg p-5 rounded-xl bg-white space-y-3 z-100"
                 data-aos="fade-left"
@@ -79,7 +76,6 @@ const AllItems = () => {
               </div>
             </div>
 
-            {/* Banner Images Section */}
             <div className="relative flex justify-center">
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/product_16.png"
@@ -99,7 +95,7 @@ const AllItems = () => {
         </div>
       </section>
 
-      {/* ------------------- Card Section ------------------- */}
+      
       <div>
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
           All Toys
@@ -109,7 +105,7 @@ const AllItems = () => {
         {filteredItems.map((item) => (
           <div className=" p-0 md:p-2 w-full  flex">
             <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden flex flex-col h-full w-full">
-              {/* Image Section */}
+              
               <div className="bg-[#EAF8FF] py-1 md:p-5 flex justify-center rounded-t-2xl">
                 <img
                   className="w-32 h-32 lg:w-44 lg:h-44 rounded-xl object-contain"
@@ -118,7 +114,7 @@ const AllItems = () => {
                 />
               </div>
 
-              {/* Content Section */}
+              
               <div className="p-3 flex flex-col flex-1">
                 <h2 className="text-[14px] lg:text-xl font-semibold text-gray-700 leading-tight">
                   {item.name}
@@ -150,10 +146,10 @@ const AllItems = () => {
                   </p>
                 </div>
 
-                {/* Spacer to push button to bottom */}
+                
                 <div className="flex-1"></div>
 
-                {/* Button */}
+               
                 <Link
                   to={`/product-details/${item.id}`}
                   className="mt-3 bg-linear-to-r from-[#FA6775] to-[#F52549] w-full text-center py-2 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition hover:bg-[#6ECFFF]"

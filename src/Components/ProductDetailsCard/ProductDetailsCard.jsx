@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ProductDetailsCard = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [isLoved, setIsLoved] = useState(false);
-  const [activeTab, setActiveTab] = useState("description"); // tabs
+  const [activeTab, setActiveTab] = useState("description"); 
   const [userRating, setUserRating] = useState(0);
   const [reviews, setReviews] = useState([]);
   const { addOrder } = useContext(OrderContext);
@@ -32,7 +32,6 @@ const ProductDetailsCard = ({ product }) => {
     SKU,
   } = product;
 
-  // Load rating & reviews from localStorage
   useEffect(() => {
     const savedRating = localStorage.getItem(`rating-${name}`);
     const savedReviews = localStorage.getItem(`reviews-${name}`);
@@ -80,7 +79,7 @@ const ProductDetailsCard = ({ product }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        {/* ---------- Image Section ---------- */}
+        
         <div className="border rounded-2xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={image}
@@ -89,15 +88,15 @@ const ProductDetailsCard = ({ product }) => {
           />
         </div>
 
-        {/* ---------- Product Info Section ---------- */}
+        
         <div>
-          {/* Rating Display */}
+         
           <p className="text-orange-600 text-lg font-semibold flex items-center gap-1">
             <FaStar className="text-orange-500 text-[19px]" /> {rating} 
             <span className="text-gray-500 text-sm">(Customer reviews)</span>
           </p>
 
-          {/* User Rating */}
+          
           <div className="flex items-center mt-2 gap-1">
             {[1,2,3,4,5].map((i) => (
               <FaStar
@@ -112,24 +111,24 @@ const ProductDetailsCard = ({ product }) => {
             {userRating > 0 && <span className="ml-2 text-gray-600">Your rating: {userRating}</span>}
           </div>
 
-          {/* Product Name */}
+          
           <h2 className="text-3xl font-bold mt-3">{name}</h2>
 
-          {/* Short Description */}
+          
           <p className="text-gray-600 mt-3">{shortDescription}</p>
 
-          {/* Price */}
+          
           <div className="flex items-end gap-3 mt-5">
             <p className="text-3xl font-bold text-[#F52549]">৳{discountPrice}</p>
             <p className="text-lg line-through text-gray-400">৳{price}</p>
           </div>
 
-          {/* Stock */}
+         
           <p className={`font-semibold mt-1 ${stock > 0 ? 'text-green-600' : 'text-red-600'}`}>
             {stock > 0 ? `✔ In stock (${stock} pcs)` : "Out of stock"}
           </p>
 
-          {/* Quantity + Order + Love + Repost Buttons */}
+          
           <div className="flex flex-wrap items-center gap-4 mt-6">
             <div className="flex items-center border rounded-lg px-3 py-2">
               <button
@@ -170,7 +169,7 @@ const ProductDetailsCard = ({ product }) => {
             </button>
           </div>
 
-          {/* Extra Info */}
+          
           <div className="grid grid-cols-2 gap-4 mt-8 text-gray-600">
             <p><b>SKU:</b> {SKU}</p>
             <p><b>Category:</b> {category}</p>
@@ -178,7 +177,7 @@ const ProductDetailsCard = ({ product }) => {
             <p><b>Brand:</b> {brand}</p>
           </div>
 
-          {/* Social Icons */}
+          
           <div className="flex items-center gap-4 mt-6 text-gray-600">
             <span className="font-semibold">Share:</span>
             <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#1877F2] transition-colors"><FaFacebookF size={28} className="cursor-pointer" /></a>
@@ -190,7 +189,7 @@ const ProductDetailsCard = ({ product }) => {
         </div>
       </div>
 
-      {/* ---------- Tabs: Description / Reviews ---------- */}
+      
       <div className="mt-12">
         <div className="flex gap-4 border-b pb-2">
           <button

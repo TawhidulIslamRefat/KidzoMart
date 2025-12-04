@@ -15,9 +15,8 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
-        toast.success("Register Successful!", {
-          onClose: () => navigate("/"),
-        });
+        toast.success("Register Successful!");
+        navigate('/')
       })
       .catch((error) => {
         toast.error(error.message);
@@ -55,9 +54,8 @@ const Register = () => {
             photoURL: photo,
           });
 
-          toast.success("Register Successful!", {
-            onClose: () => navigate("/"),
-          });
+          toast.success("Register Successful!");
+          navigate('/')
         });
       })
       .catch((error) => {

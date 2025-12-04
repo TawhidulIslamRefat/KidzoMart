@@ -16,13 +16,11 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple validation
     if (!formData.name || !formData.email || !formData.message) {
       toast.error("Please fill all fields!");
       return;
     }
 
-    // You can integrate backend API here
     console.log("Form submitted:", formData);
 
     toast.success("Message sent successfully!");
@@ -33,7 +31,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-10 md:py-20 px-6 md:px-20">
       <Toaster position="top-right" reverseOrder={false} />
 
-      {/* Heading */}
+      
       <h1 className=" text-2xl md:text-4xl font-extrabold text-gray-800 mb-6">
         Contact <span >Us</span>
       </h1>
@@ -41,7 +39,7 @@ const ContactPage = () => {
         Have questions or want to get in touch? Fill out the form below and we'll respond as soon as possible.
       </p>
 
-      {/* Form */}
+      
       <form
         onSubmit={handleSubmit}
         className="bg-white p-5 md:p-10 rounded-3xl shadow-lg w-full max-w-3xl flex flex-col gap-6"
@@ -80,7 +78,7 @@ const ContactPage = () => {
         </button>
       </form>
 
-      {/* Optional contact info */}
+      
       <div className="mt-16 text-center text-gray-600 space-y-2">
         <p>Email: support@kidzomart.com</p>
         <p>Phone: +1 234 567 890</p>

@@ -1,11 +1,11 @@
 .custom-pulse span:nth-child(1) {
-  background-color: #F52549 !important; /* first pulse lal */
+  background-color: #F52549 !important; 
 }
 
 .custom-pulse span:nth-child(2) {
-  background-color: #0000FF !important; /* middle pulse blue */
+  background-color: #0000FF !important; 
 }
 
 .custom-pulse span:nth-child(3) {
-  background-color: #F52549 !important; /* last pulse lal */
+  background-color: #F52549 !important; 
 }

@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <div className="font-sans text-gray-800 w-full md:w-10/12 mx-auto">
 
-      {/* Hero Section */}
+      
       <section className=" py-15   rounded-b-3xl text-center">
         <h1 className=" text-xl sm:text-2xl  md:text-4xl  font-extrabold leading-tight mb-6">
           About <span>Us</span>
@@ -22,7 +22,7 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* Mission & Vision */}
+      
       <section className="px-3 md:px-6 py-0 md:py-10 grid md:grid-cols-2 gap-5 md:gap-12 ">
         <div className="bg-white p-10 rounded-2xl shadow-md">
           <h2 className="text-xl md:text-3xl font-bold mb-4 text-gray-800">Our Mission</h2>
@@ -38,7 +38,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+     
       <section className="px-6 md:px-20 py-10 md:py-20 flex flex-col justify-center items-center">
         <h2 className=" text-xl sm:text-2xl md:text-4xl  font-extrabold text-center mb-12">Meet Our Team</h2>
         <div className="flex gap-4 md:gap-10">
@@ -56,7 +56,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      
       <section className="bg-linear-to-l from-[#6ECFFF] to-[#1EA7FF] my-10 text-white py-20 px-6 md:px-20 rounded-2xl text-center">
         <h2 className=" text-2xl md:text-4xl  font-extrabold mb-6">Explore, Learn & Play!</h2>
         <p className="text-sm md:text-xl max-w-2xl mx-auto mb-8">

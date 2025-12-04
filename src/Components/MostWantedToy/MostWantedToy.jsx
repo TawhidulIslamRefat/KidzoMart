@@ -44,9 +44,9 @@ const MostWantedToy = () => {
       </h2>
 
       <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
-        {/* Left Banner */}
+        
 
-        {/* Product Cards */}
+        
         {products.map((p) => (
           <div
             key={p.id}

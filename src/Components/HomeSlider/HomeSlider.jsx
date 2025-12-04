@@ -15,12 +15,12 @@ const HomeSlider = () => {
         autoplay={{ delay: 8000 }}
         loop={true}
       >
-        {/* =============== SLIDE 1 =============== */}
+        
         <SwiperSlide>
           <section
             className="
               w-full  
-              h-[500px] md:h-[650px]   /* SAME HEIGHT FOR ALL SLIDES */
+              h-[500px] md:h-[650px]   
               bg-linear-to-l from-[#6ECFFF] to-[#1EA7FF]
               rounded-3xl 
               px-6 md:px-14 
@@ -30,11 +30,11 @@ const HomeSlider = () => {
               relative overflow-hidden
             "
           >
-            {/* Background circles */}
+            
             <div className="absolute top-10 left-10 w-40 h-40 bg-orange-300/30 rounded-full blur-2xl" />
             <div className="absolute bottom-10 right-20 w-52 h-52 bg-orange-200/40 rounded-full blur-2xl" />
 
-            {/* LEFT TEXT */}
+            
             <div className="flex-1 z-10">
               <span className="bg-yellow-300 text-black text-sm px-4 py-1 rounded-full md:text-lg font-medium">
                 FREE Delivery on Orders Over $20
@@ -53,7 +53,7 @@ const HomeSlider = () => {
               </Link>
             </div>
 
-            {/* RIGHT IMAGE */}
+           
             <div className="flex-1 flex justify-center z-10 relative">
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/01/h1banner_1.png"
@@ -76,7 +76,7 @@ const HomeSlider = () => {
           </section>
         </SwiperSlide>
 
-        {/* =============== SLIDE 2 =============== */}
+        
         <SwiperSlide>
           <section
             className="
@@ -94,7 +94,7 @@ const HomeSlider = () => {
             <div className="absolute top-10 left-10 w-40 h-40 bg-orange-300/30 rounded-full blur-2xl" />
             <div className="absolute bottom-10 right-20 w-52 h-52 bg-orange-200/40 rounded-full blur-2xl" />
 
-            {/* LEFT TEXT */}
+            
             <div className="flex-1 z-10">
               <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
                 Weekend Discount
@@ -113,7 +113,7 @@ const HomeSlider = () => {
               </Link>
             </div>
 
-            {/* RIGHT IMAGE */}
+            
             <div className="flex-1 flex justify-center z-10 relative">
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/h4banner_1.png"
@@ -136,7 +136,7 @@ const HomeSlider = () => {
           </section>
         </SwiperSlide>
 
-        {/* =============== SLIDE 3 =============== */}
+       
         <SwiperSlide>
           <section
             className="
@@ -154,7 +154,7 @@ const HomeSlider = () => {
             <div className="absolute top-10 left-10 w-40 h-40 bg-orange-300/30 rounded-full blur-2xl" />
             <div className="absolute bottom-10 right-20 w-52 h-52 bg-orange-200/40 rounded-full blur-2xl" />
 
-            {/* LEFT TEXT */}
+            
             <div className="flex-1 z-10">
               <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
                 Special Offer Today
@@ -173,7 +173,7 @@ const HomeSlider = () => {
               </Link>
             </div>
 
-            {/* RIGHT IMAGE */}
+            
             <div className="flex-1 flex justify-center z-10 relative">
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/01/h1banner_1.png"

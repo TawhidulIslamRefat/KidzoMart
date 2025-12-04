@@ -32,7 +32,6 @@ const MyOrder = () => {
         </div>
       ) : (
         <>
-          {/* ---------- MOBILE CARD LAYOUT ---------- */}
           <div className="grid grid-cols-1 gap-6 md:hidden">
             {order.map((product, index) => (
               <div
@@ -66,7 +65,6 @@ const MyOrder = () => {
             ))}
           </div>
 
-          {/* ---------- DESKTOP TABLE LAYOUT ---------- */}
           <div className="hidden md:block overflow-x-auto">
             <table className="table-auto min-w-[600px] w-full border border-gray-200 rounded-lg shadow-md text-sm md:text-base">
               <thead className="bg-gray-100">

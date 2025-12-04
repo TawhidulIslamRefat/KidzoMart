@@ -16,11 +16,7 @@ const Register = () => {
         const user = result.user;
         setUser(user);
         toast.success("Register Successful!", {
-<<<<<<< HEAD
           onClose: () => navigate("/"),
-=======
-          onClose: () => navigate(location.state?.from || "/"),
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
         });
       })
       .catch((error) => {

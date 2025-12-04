@@ -35,37 +35,22 @@ const AllItems = () => {
     <div>
       {/* ------------------- Banner Section ------------------- */}
       <section>
-<<<<<<< HEAD
         <div className="bg-[#F8F7F7] relative py-0 sm:py-15 md:py-20">
           <div className="w-10/12 mx-auto grid lg:grid-cols-2 items-center gap-10 py-15">
-=======
-        <div className="bg-[#F8F7F7] relative py-10 sm:py-15 md:py-20">
-          <div className="w-10/12 mx-auto grid lg:grid-cols-2 items-center gap-10 py-15">
-
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             <div className="space-y-6">
               <h1
                 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-tight"
                 data-aos="fade-right"
               >
-<<<<<<< HEAD
                 Easy way to find <br /> a perfect <span>Toy</span>
-=======
-                Easy way to find <br /> a perfect{" "}
-                <span>Toy</span>
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               </h1>
 
               <p
                 className="text-gray-600 max-w-lg font-medium text-xs sm:text-sm md:text-lg"
                 data-aos="fade-right"
               >
-<<<<<<< HEAD
                 Explore amazing kids toys with perfect pricing, quality and
                 variety.
-=======
-                Explore amazing kids toys with perfect pricing, quality and variety.
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
               </p>
 
               {/* Search & Sort Box */}
@@ -99,22 +84,14 @@ const AllItems = () => {
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/product_16.png"
                 alt=""
-<<<<<<< HEAD
                 className="w-80 h-56 rounded-xl object-cover shadow-md lg:absolute "
-=======
-                className="w-80 h-56 rounded-xl object-cover shadow-md lg:absolute"
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
                 data-aos="fade-left"
               />
 
               <img
                 src="https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2023/12/product_08.png"
                 alt=""
-<<<<<<< HEAD
                 className="w-72 h-48 rounded-xl object-cover shadow-xl absolute md:-bottom-5 -bottom-25 -left-5 border-4 border-white hidden lg:flex"
-=======
-                className="w-72 h-48 rounded-xl object-cover shadow-xl absolute md:-bottom-5 -bottom-25 -left-5 border-4 border-white"
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
                 data-aos="fade-up"
               />
             </div>
@@ -123,7 +100,6 @@ const AllItems = () => {
       </section>
 
       {/* ------------------- Card Section ------------------- */}
-<<<<<<< HEAD
       <div>
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
           All Toys
@@ -187,57 +163,6 @@ const AllItems = () => {
               </div>
             </div>
           </div>
-=======
-      <div className="w-10/12 mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
-        {filteredItems.map((item) => (
-          <div className="p-2">
-      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden">
-        <div className="bg-[#EAF8FF] p-5 flex justify-center rounded-t-2xl">
-          <img
-            className="w-32 h-32 lg:w-44 lg:h-44 rounded-xl object-contain"
-            src={item.image}
-            alt={item.name}
-          />
-        </div>
-
-        <div className="p-3 flex flex-col gap-1.5">
-          <h2 className="text-[14px] lg:text-xl font-semibold text-gray-700 leading-tight">
-            {item.name}
-          </h2>
-
-          <div className="flex items-center justify-between mt-1">
-            <p className="text-lg font-bold text-red-500">${item.discountPrice}</p>
-            <p className="text-sm line-through text-gray-400">${item.price}</p>
-          </div>
-
-          <div className="flex justify-between items-center mt-2">
-            <div className="flex items-center gap-1 px-2 py-1 rounded-lg">
-              {Array(Math.floor(item.rating))
-                .fill()
-                .map((_, i) => (
-                  <FaStar key={i} className="text-orange-500" />
-                ))}
-
-              {item.rating % 1 >= 0.5 && (
-                <FaStarHalfAlt className="text-orange-500" />
-              )}
-            </div>
-
-            <p className="text-[12px] lg:text-[14px] font-medium bg-gray-200 px-2 py-1 rounded-lg">
-              <span className="text-red-500">stock -</span> {item.stock}
-            </p>
-          </div>
-
-          <Link
-            to={`/product-details/${item.id}`}
-            className="mt-3 bg-linear-to-r from-[#FA6775] to-[#F52549] w-full text-center py-2 text-white font-semibold text-sm rounded-lg hover:opacity-90 transition hover:bg-[#6ECFFF]"
-          >
-            View Detail
-          </Link>
-        </div>
-      </div>
-    </div>
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
         ))}
       </div>
     </div>

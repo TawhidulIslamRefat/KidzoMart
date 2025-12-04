@@ -1,21 +1,14 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
-<<<<<<< HEAD
 import { FaBoxes, FaInfoCircle, FaUserAlt } from "react-icons/fa";
-=======
-import { FaUserAlt } from "react-icons/fa";
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
 import { FaUserCircle } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import { IoMdHome } from "react-icons/io";
-<<<<<<< HEAD
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineAppstore } from "react-icons/ai";
-=======
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
   const links = (
@@ -33,11 +26,7 @@ const Navbar = () => {
         <NavLink to="/all-items">
           {" "}
           <span className="flex md:hidden">
-<<<<<<< HEAD
             <FaBoxes />
-=======
-            <FaUserCircle />
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
           </span>{" "}
           <span className="hidden md:flex">All Toys</span>
         </NavLink>
@@ -68,11 +57,7 @@ const Navbar = () => {
           <NavLink to="/about-us">
             {" "}
             <span className="flex md:hidden">
-<<<<<<< HEAD
               <FaInfoCircle  />
-=======
-              <IoNotificationsSharp />
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             </span>{" "}
             <span className="hidden md:flex">About Us</span>
           </NavLink>
@@ -81,11 +66,7 @@ const Navbar = () => {
           <NavLink to="/contact">
             {" "}
             <span className="flex md:hidden">
-<<<<<<< HEAD
               <FiPhone  />
-=======
-              <IoNotificationsSharp />
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
             </span>{" "}
             <span className="hidden md:flex">Contact</span>
           </NavLink>
@@ -181,11 +162,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="fixed bottom-0 left-0 w-full z-100 md:z-0 bg-base-100 border-t border-gray-300 md:hidden">
-<<<<<<< HEAD
         <ul className=" flex justify-center items-center gap-8.5 py-1.5">
-=======
-        <ul className=" flex justify-center items-center gap-15 py-1.5">
->>>>>>> 1a72bcf6a49c0ccd50f2dcda33870645799cc98f
           {links}
         </ul>
       </div>

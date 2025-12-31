@@ -49,9 +49,15 @@ This project aims to provide a user-friendly web application where users can:
 
 ---
 
-## 💻 Screenshots
+## 🖼️ Screenshots
 
-> *(Add screenshots here for better presentation)*
+<p align="center">
+  <img src="https://i.ibb.co/HL5tDN0p/Screenshot-2025-12-31-123728.png" width="48%" />
+  <img src="https://i.ibb.co/Y4spdp5J/Screenshot-2025-12-31-123821.png" width="48%" />
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/vC5ff0Wx/Screenshot-2025-12-31-123848.png" width="48%" />
+</p>
 
 ---
 

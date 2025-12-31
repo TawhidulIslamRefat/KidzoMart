@@ -38,14 +38,14 @@ This project aims to provide a user-friendly web application where users can:
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** React, React Router DOM, Tailwind CSS, DaisyUI, AOS, React Toastify  
+- **Frontend:** React, React Router, Tailwind CSS, DaisyUI, AOS, React Toastify  
 - **Authentication & Database:** Firebase Authentication  
 
 ---
 
 ## 📦 NPM Packages Used
 
-- `react`, `react-router-dom`, `react-icons`, `react-toastify`, `firebase`, `aos`, `tailwindcss`, `daisyui`  
+- `react`, `react-router`, `react-icons`, `react-toastify`, `firebase`, `aos`, `tailwindcss`, `daisyui`  
 
 ---
 

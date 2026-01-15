@@ -6,7 +6,7 @@
 
 ## 🌐 Live Website
 
-🔗 [https://toy-topia-01.netlify.app/](https://toy-topia-01.netlify.app/)
+🔗 (https://kidzomart.netlify.app/)
 
 ---
 
